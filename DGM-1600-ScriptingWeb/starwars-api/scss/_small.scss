@@ -1,0 +1,202 @@
+/* --------------- * --------------- */
+*
+{
+    box-sizing: border-box;
+}
+
+/* --------------- clear fix --------------- */
+.clearfix:after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* --------------- similar --------------- */
+
+h1,
+h2,
+p,
+nav ul
+{
+    margin: 0;
+}
+
+header,
+main h2
+{
+    color: $website-theme; 
+}
+
+nav,
+footer
+{
+    background-color: $website-theme;
+}
+
+nav a,
+main
+{
+    display: block;
+}
+
+nav a,
+footer,
+p
+{
+    text-align: center;
+}
+
+nav a,
+footer
+{
+    color: #000;
+    font-size: 110%;
+    font-weight: 400;
+}
+
+header,
+main,
+footer
+{
+    padding: $break-gutter; 
+}
+
+header,
+footer
+{
+    font-weight: 400;
+}
+
+main
+{
+    font-weight: 300; 
+}
+
+/* --------------- body --------------- */
+body
+{
+    font-family: 'Lato', sans-serif;
+    font-size: $standard-font-size;
+    background-image: linear-gradient(rgba(80, 80, 80, 0.8), rgba(80, 80, 80, 0.8)),url(../images/star-background.jpg);
+    background-position: center;
+}
+
+.nav-foot-wrapper
+{
+    width: 100%;
+    background-color: $website-theme;
+}
+
+/* --------------- header --------------- */
+header
+{
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+}
+
+h1
+{
+    font-size: 175%;
+}
+
+h2
+{
+    font-size: 130%;
+}
+
+/* --------------- nav --------------- */
+nav ul
+{
+    padding: 0;
+}
+
+nav li
+{
+    list-style: none;
+}
+
+nav a
+{
+    padding: $nav-padding; 
+    text-decoration: none;
+}
+
+.active a
+{
+    color: #fff;
+}
+
+.active
+{
+    background-color: darken($website-theme, 20%);
+}
+
+nav li:hover,
+.active:hover
+{
+    background-color: darken($website-theme, 18%);
+    transition: background-color 0.3s;
+}
+
+/* --------------- main --------------- */
+
+main
+{
+    display: flex;
+    flex-wrap: wrap;
+    color: $white-color;
+    padding-top: 0px;
+}
+
+main h2
+{
+    margin-bottom: 10px;
+    font-size: 150%;
+    overflow: hidden;
+}
+
+main div
+{
+    flex-basis: 50%;
+    padding: 15px;
+}
+
+main img
+{
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 50px #959595;
+    border: 3px solid rgb(235, 235, 235);
+    border-radius: 10px;
+    transform: scale(0.97);
+    transition: transform 0.3s;
+}
+
+main img:hover
+{
+    transform: scale(1);
+}
+
+main p
+{
+    margin-top: 5px;
+}
+
+.button-area
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 0px;
+    button
+    {
+        width: 225px;
+        height: 50px;
+        margin: 10px;
+        background-color: $website-theme;
+        border-radius: 10px;
+    }
+}

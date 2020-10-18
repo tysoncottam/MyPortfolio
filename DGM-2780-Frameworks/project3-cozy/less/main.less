@@ -1,0 +1,369 @@
+/* ---------------- general ---------------- */
+*
+{
+    box-sizing: border-box;
+}
+
+*:focus
+{
+    outline:none;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-x: hidden;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+a:link
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ---------------- header ---------------- */
+header
+{
+    background-color: @website-color;
+    padding: 20px 30px;
+}
+
+#my-header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 100;
+    transform-origin: top;
+    transform: perspective(1000px) rotateX(-90deg);
+    opacity: 0;
+    transition: 0.5s;
+}
+#my-header.active
+{
+    transform: perspective(1000px) rotateX(0deg);
+    opacity: 1;
+}
+.company-name
+{
+    .row-flex();
+    justify-content: flex-start;
+    h1
+    {
+        .top-alignment();
+        background-color: white;
+        color: @website-color;
+        padding-right: 5.5px;
+        transition: background-color 0.3s;
+        &:hover
+        {
+            background-color: @color-2;
+        }
+    }
+}
+
+.header-menu
+{
+    .row-flex();
+    justify-content: flex-end;
+    color: #fff;
+    width: 111px;
+    position: absolute;
+    top: -7px;
+    right: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+    h1
+    {
+        .top-alignment();
+        cursor: pointer;
+    }
+    i
+    {
+        .top-alignment();
+        font-size: 200%;
+        margin-left: 5px;
+        padding-top: 8px;
+        
+    }
+    &:hover
+    {
+        color: @color-2;
+    }
+}
+
+.header-menu.active
+{
+    opacity: 0;
+}
+
+/* hidden menu */
+.hidden-menu
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(39, 113, 157, 0.95);
+    z-index: 200;
+    transform-origin: center;
+    transform: perspective(1000px) scale(0);
+    opacity: 0;
+    transition: 0.3s;
+    .col-flex();
+    position: fixed;
+    .close-menu
+    {
+        color: #fff;
+        position: fixed;
+        top: 10px;
+        right: 37px;
+        font-size: 400%;
+        cursor: pointer;
+        &:hover
+        {
+            color: @color-2;
+        }
+    }
+    h1
+    {
+        .custom-paragraph();
+        color: #fff;
+        padding: 20px;
+        cursor: pointer;
+        &:hover
+        {
+            color: @color-2;
+        }
+    }
+    button
+    {
+        .row-flex();
+        .custom-btn();
+        margin: 40px 20px;
+    }
+}
+.hidden-menu.active
+{
+    transform: perspective(1000px) scale(1);
+    opacity: 1;
+}
+
+.click-menu-area
+{
+    position: fixed;
+    top: 18px;
+    right: 27px;
+    width: 115px;
+    height: 33px;
+    background-color: rgba(255, 255, 255, 0.47);
+    z-index: 150;
+    cursor: pointer;
+}
+
+
+/* ---------------- hero-section ---------------- */
+.hero-section
+{
+    .col-flex();
+    background-color: @website-color;
+    height: 650px;
+    width: 100%;
+    color: #fff;
+    padding: 40px;
+}
+
+.hero-info
+{
+    .col-flex();
+    align-items: flex-start;    
+    opacity: 0;
+}
+
+.hero-main-message
+{
+    padding: 50px 0px;
+    border-bottom: 2px solid #fff;
+    width: 75vw;    
+    h1
+    {
+        font-size: 450%;
+        font-weight: 600;
+    }
+}
+
+.hero-sub-message
+{
+    .row-flex();
+    padding: 50px 0px;
+    width: 75vw;
+    .hero-sub-message-title
+    {
+        width: 44%;
+        h2
+        {
+            .custom-paragraph();
+        }
+    }
+    .hero-sub-message-button
+    {
+        width: 56%;
+        button
+        {
+            .row-flex();
+            .custom-btn();
+        }
+    }
+}
+
+/* ---------------- gallery-section ---------------- */
+.gallery-area
+{
+    height: 520px;
+    .color-1
+    {
+        background:url(../images/pic-action.jpg);
+        .gallery-preset();
+        .color-shift
+        {
+            background-color: @color-1;
+        }
+    }
+    .color-2
+    {
+        background:url(../images/pic-classic.jpg);
+        .gallery-preset();
+        .color-shift
+        {
+            background-color: @color-2;
+        }
+    }
+    .color-3
+    {
+        background:url(../images/pic-mystery.jpg);
+        .gallery-preset();
+        .color-shift
+        {
+            background-color: @color-3;
+        }
+    }
+    .color-4
+    {
+        background:url(../images/pic-adventure.jpg);
+        .gallery-preset();
+        .color-shift
+        {
+            background-color: @color-4;
+        }
+    }
+    .color-5
+    {
+        background:url(../images/pic-fantasy.jpg);
+        .gallery-preset();
+        .color-shift
+        {
+            background-color: @color-5;
+        }
+    }
+    .color-6
+    {
+        background:url(../images/pic-history.jpg);
+        .gallery-preset();
+        .color-shift
+        {
+            background-color: @color-6;
+        }
+    }
+}
+
+/* ---------------- read-section ---------------- */
+.read-section
+{
+    .col-flex();
+    align-items: flex-start;
+    background-color: @website-color;
+    padding: 0  200px;
+    color: #fff;
+    .read-area
+    {
+        padding: 40px 10px;
+         h1
+        {
+            .custom-lead();
+            border-bottom: 3px solid #fff;
+            opacity: 0;
+            transform: translateX(-250%);
+        }
+        h3
+        {
+            .custom-paragraph();
+            padding: 50px 0;
+            opacity: 0;
+            transform: translateX(100%);
+        }
+        button
+        {
+            .row-flex();
+            .custom-btn();
+            margin: 0;
+            opacity: 0;
+            transform: translateX(-250%);
+        }
+    }
+}
+
+/* ---------------- footer ---------------- */
+/* --------------- footer --------------- */
+footer
+{
+    background-color: @website-color;
+    .row-flex();
+    padding: 20px;
+    color: #fff;
+}
+
+.copyright-section
+{
+    h2
+    {
+        font-size: 150%;
+        padding: 20px;
+        transition: color 0.3s;
+        &:hover
+        {
+            color: @color-2;
+        }
+    }
+}
+
+.social-links
+{
+    .row-flex();
+    i
+    {
+        font-size: 200%;
+        padding: 20px;
+        color: #fff;
+        transition: color 0.3s;
+        cursor: pointer;
+        &:hover
+        {
+            color: @color-2;
+        }
+    }
+    .ion-social-twitch
+    {
+        font-size: 180%;
+    }
+}

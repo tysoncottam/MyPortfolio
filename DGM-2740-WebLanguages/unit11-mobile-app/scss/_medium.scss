@@ -1,0 +1,52 @@
+/* --------------- SASS --------------- */
+@for $i from 1 through 12 {
+  $w:(($i/12)-0.02)*100%;
+  .Mmedium-#{$i}{flex-basis: $w;}
+}
+@for $i from 1 through 12 {
+  $w:($i/12)*100%;
+  .medium-#{$i}{flex-basis: $w;}
+}
+
+/* --------------- html & body --------------- */
+
+
+/* --------------- body --------------- */
+
+
+/* --------------- mixed --------------- */
+
+
+/* --------------- header --------------- */
+
+
+/* --------------- nav --------------- */
+nav
+{
+    justify-content: space-around;
+    padding: 0;
+}
+
+/* ------------------------------ main ------------------------------ */
+main
+{
+    width: 100vw;
+    padding-top: 0;
+}
+
+main h2
+{
+    font-size: 110%;
+}
+
+main h3
+{
+    font-size: 100%;
+}
+
+.hotel-info
+{
+    padding: 10px 2px;
+}
+
+/* --------------- footer --------------- */

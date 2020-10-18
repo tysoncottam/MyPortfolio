@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<!------------------------------ head ------------------------------>
+    <head>
+        <!--------------- metas --------------->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Unit 6">
+        <meta name="author" content="Tyson Cottam">
+
+        <!--------------- styles --------------->
+        <link href="css/styles.css" rel="stylesheet">
+        <link rel="shortcut icon" href="#">
+
+        <!--------------- google fonts --------------->
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+        <!--------------- title --------------->
+        <title>Hotel</title>
+    </head>
+
+<!------------------------------ body ------------------------------>
+    <body>
+        <!--------------- header --------------->
+        <div class="header-wrapper">
+            <header>
+                <div class="header-1">
+                    <h1 id="company-name"></h1>
+                    <h2 id="company-slogan"></h2>
+                </div>
+                <div class="search-1">
+                    <input type="text" placeholder="Search...">
+                </div>
+            </header>
+        </div>
+
+        <!--------------- nav --------------->
+        <div class="nav-wrapper">
+            <nav>
+                <div class="menu">
+                    <div class="menu-top"></div>
+                    <div class="menu-middle"></div>
+                    <div class="menu-bottom"></div>
+                </div>
+                <ul class="nav-links">
+                    <li class="inactive" id="first-li"><a href="https://tysoncottam.netlify.com/">Locations</a></li>
+                    <li class="active"><a href="#">Visit</a></li>
+                    <li class="inactive"><a href="https://tysoncottam.netlify.com/">Services</a></li>
+                    <li class="inactive"><a href="https://tysoncottam.netlify.com/">Gallery</a></li>
+                    <li class="inactive"><a href="https://tysoncottam.netlify.com/">About</a></li>
+                    <li class="inactive" id="last-li"><a href="https://tysoncottam.netlify.com/">Help</a></li>
+                </ul>
+                <div class="search-2">
+                    <input type="text" placeholder="Search...">
+                </div>
+            </nav>
+        </div>
+
+        <!--------------- main --------------->
+        <main>
+            <h1 id="welcomeMessage"></h1>
+            <section class="main-section">
+                <div class="mandatory-stuff">
+                    <h2>What I learned:</h2>
+                    <ul>
+                        <li><i class="ion-android-checkbox"></i><p>Create an external JSON file</p></li>
+                        <li><i class="ion-android-checkbox"></i><p>Load the JSON file using the Fetch API</p></li>
+                        <li><i class="ion-android-checkbox"></i><p>How to use a try...catch block</p></li>
+                        <li><i class="ion-android-checkbox"></i><p>How to use async... await to make asynchronous function calls</p></li>
+                        <li><i class="ion-android-checkbox"></i><p>How to retrieve and store resolved promise data</p></li>
+                        <li><i class="ion-android-checkbox"></i><p>Display data from the JSON file on the web page using three different buttons</p></li>
+                    </ul>
+                </div>
+                <div class="main-project">
+                    <h2>Select a hotel</h2>
+                    <div class="hotels">
+                        <div id="marriott">Marriott Hotel Rooms</div>
+                        <div id="sheraton">Sheraton Hotel Rooms</div>
+                        <div id="hilton">Hilton Hotel Rooms</div>
+                    </div>
+                    <h2 id="hotelName">Hotel</h2>
+                    <h3>Address: <span id="address"></span></h3>
+                    <p>Number of Rooms: <span id="rooms"></span></p>
+                    <p>Gym Available: <span id="gym"></span></p>
+                    <p>Room Types: <span id="type"></span></p>
+                    
+                    <img id="picture">
+                </div>
+            </section>
+        </main>
+
+        <!--------------- footer --------------->
+        <div class="footer-wrapper">
+            <footer>
+                <div>
+                    &copy; 2019 Tyson Cottam
+                </div>
+                <div>
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com/"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="https://www.twitch.tv/"><i class="ion-social-twitch"></i></a></li>
+                    </ul>
+                </div>
+                
+            </footer>
+        </div>
+        <script src="js/app.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

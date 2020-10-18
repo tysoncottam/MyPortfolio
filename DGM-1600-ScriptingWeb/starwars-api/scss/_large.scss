@@ -1,0 +1,25 @@
+header, nav, .hero-section, main, footer
+{
+    max-width: $max-width;
+    margin: auto;
+}
+
+nav ul
+{
+    text-align: center;
+}
+nav li
+{
+    display: inline-block;
+    padding: 0 26px;
+    float: none;
+    width: auto;
+}
+main div
+{
+    flex-basis: 25%;
+}
+main h2
+{
+    font-size: 145%;
+}

@@ -1,0 +1,37 @@
+header, nav, .hero-section, main, footer
+{
+    max-width: $max-width;
+    margin: auto;
+}
+.header-wrapper
+{
+    width: 100%;
+    background-image: url(../images/large-repeat.gif);
+    height: 275px;
+}
+header
+{
+    background-image: url(../images/large.jpg), url(../images/large-repeat.gif);
+    height: 275px;
+    padding: 60px 0 0 40px;
+}
+header h1
+{
+    font-size: 300%;
+}
+header h2
+{
+    font-size: 225%;
+}
+nav ul
+{
+    padding-left: $gutter;
+}
+nav li
+{
+    width: auto;
+}
+nav a
+{
+    padding: $large-nav-padding;
+}

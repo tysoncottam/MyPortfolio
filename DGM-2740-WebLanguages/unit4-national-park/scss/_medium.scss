@@ -1,0 +1,20 @@
+header
+{
+    background-image: url(../images/medium.jpg);
+    height: 277px;
+    padding: 80px 0 0 0px;
+}
+header h1
+{
+    font-size: 225%;
+    text-shadow: 2px 2px #a8a8a8;
+}
+header h2
+{
+    text-shadow: 2px 2px #a8a8a8;
+}
+nav li
+{
+    float: left;
+    width: $one-forth;
+}

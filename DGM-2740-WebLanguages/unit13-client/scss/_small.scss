@@ -1,0 +1,85 @@
+/* --------------- SASS --------------- */
+@for $i from 1 through 12 {
+    $w:(($i/12)-0.02)*100%;
+    .Msmall-#{$i}{flex-basis: $w;}
+}
+@for $i from 1 through 12 {
+    $w:($i/12)*100%;
+    .small-#{$i}{flex-basis: $w;}
+}
+
+/* --------------- html & body --------------- */
+
+/* --------------- body --------------- */
+
+/* --------------- header --------------- */
+
+/* --------------- nav --------------- */
+.nav-wrapper
+{
+    nav
+    {
+        justify-content: center;
+        .nav-links
+        {
+            padding: 0;
+            margin: 0;
+            justify-content: center;
+            li
+            {
+                justify-content: center;
+                padding: 0;
+                p
+                {
+                    display: none;
+                }
+                i
+                {
+                    font-size: 170% !important;
+                }
+            }
+            li:nth-child(2)
+            {
+                padding: 15px 40px;
+            }
+        }
+    }
+}
+
+/* --------------- main --------------- */
+.second-part
+{
+    justify-content: flex-start!important;
+    align-items: flex-start!important;
+    align-content: flex-start!important; 
+    h1,
+    h2,
+    h3
+    {
+        padding: 10px !important;
+    }
+}
+
+.area-a-1,
+.area-a-2
+{
+    flex-direction: column !important;
+}
+.area-a-1 div
+{
+    width: 100% !important;
+}
+
+/* --------------- footer --------------- */
+
+.footer-wrapper
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    p
+    {
+        text-align: center;
+    }
+}

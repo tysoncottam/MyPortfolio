@@ -1,0 +1,95 @@
+/* --------------- SASS --------------- */
+@for $i from 1 through 12 {
+  $w:(($i/12)-0.02)*100%;
+  .Mmedium-#{$i}{flex-basis: $w;}
+}
+@for $i from 1 through 12 {
+  $w:($i/12)*100%;
+  .medium-#{$i}{flex-basis: $w;}
+}
+
+/* --------------- html & body --------------- */
+
+
+/* --------------- body --------------- */
+
+
+/* --------------- mixed --------------- */
+
+
+/* --------------- header --------------- */
+
+
+/* --------------- nav --------------- */
+nav
+{
+    justify-content: space-around;
+    padding: 0;
+}
+
+.nav-links
+{
+    width: 65%;
+}
+
+/* ------------------------------ main ------------------------------ */
+main
+{
+    width: 95vw;
+}
+
+.people-section,
+.cases-section,
+.blogs-section,
+.tip-faq
+{
+    width: 95vw;
+}
+
+.people-section,
+.cases-section,
+.blogs-section
+{
+    justify-content: space-between;
+}
+
+/* --------------- people-section --------------- */
+.people-section
+{
+    margin: 30px 0px 0px 0px;
+    div
+    {
+        margin: 0;
+        margin-bottom: 15px;
+    }
+}
+
+/* --------------- cases-section --------------- */
+.cases-section
+{
+    margin: 20px 0px 20px 0px;
+    button,
+    .large-4
+    {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* --------------- blogs-section --------------- */
+.blogs-section div
+{
+    margin-bottom: 20px;
+}
+
+/* --------------- tip-faq --------------- */
+.faq
+{
+    margin-top: 20px;
+    h2, p, a
+    {
+        width: 95%;
+    }
+}
+
+/* --------------- footer --------------- */

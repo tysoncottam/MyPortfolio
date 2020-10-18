@@ -1,0 +1,28 @@
+ @media only screen and (min-width: 560px)
+{
+    header
+    {
+        border-bottom: 1px solid transparent;
+    }
+    nav li
+    {
+        float: left;
+        width: 50%;
+    }
+    main figure
+    {
+        width 100%;
+    }
+    .iphone-pic
+    {
+        display: none;
+    }
+    .ipad-pic
+    {
+        display: block;
+    }
+    .laptop-pic
+    {
+        display: none;
+    }
+} /* end of media query */

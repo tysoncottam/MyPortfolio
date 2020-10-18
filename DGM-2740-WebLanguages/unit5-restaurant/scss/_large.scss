@@ -1,0 +1,26 @@
+header, nav, .hero-section, main, footer
+{
+    max-width: 75rem;
+    margin: auto;
+}
+header h1
+{
+    font-size: 2em;
+}
+header h2
+{
+    display: block;
+    font-size: 1.5em;
+}
+nav ul
+{
+    padding-left: 2%;
+}
+nav li
+{
+    width: auto;
+}
+nav a
+{
+    padding: .5rem 1rem;
+}

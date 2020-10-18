@@ -1,0 +1,28 @@
+@media only screen and (min-width: 1028px)
+{
+    nav ul
+    {
+        padding-left: 2%;
+    }
+    nav li
+    {
+        width: auto;
+    }
+    nav a
+    {
+        padding: .5rem 1rem;
+    }
+        main figure
+    {
+        width 100%;
+        margin: 0 5%;
+    }
+    .ipad-pic
+    {
+        display: none;
+    }
+    .laptop-pic
+    {
+        display: block;
+    }
+} /* end of media query */

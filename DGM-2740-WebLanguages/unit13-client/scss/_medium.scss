@@ -1,0 +1,25 @@
+/* --------------- SASS --------------- */
+@for $i from 1 through 12 {
+  $w:(($i/12)-0.02)*100%;
+  .Mmedium-#{$i}{flex-basis: $w;}
+}
+@for $i from 1 through 12 {
+  $w:($i/12)*100%;
+  .medium-#{$i}{flex-basis: $w;}
+}
+
+/* --------------- html & body --------------- */
+
+/* --------------- body --------------- */
+
+/* --------------- header --------------- */
+
+/* --------------- nav --------------- */
+
+/* --------------- main --------------- */
+.more-about-us-section-containter2
+{
+    justify-content: center !important;
+}
+
+/* --------------- footer --------------- */

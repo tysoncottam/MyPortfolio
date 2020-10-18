@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<!------------------------------ head ------------------------------>
+    <head>
+        <!--------------- metas --------------->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Unit 2 Assignment">
+        <meta name="author" content="Tyson Cottam">
+
+        <!--------------- styles --------------->
+        <link href="css/styles.css" rel="stylesheet">
+        <link rel="shortcut icon" href="#">
+
+        <!--------------- google fonts --------------->
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+        <!--------------- title --------------->
+        <title>Guessing Game</title>
+    </head>
+
+<!------------------------------ body ------------------------------>
+    <body>
+        <!--------------- header --------------->
+        <div class="header-wrapper">
+            <header>
+                <div class="header-1">
+                    <h1 id="company-name"></h1>
+                    <h2 id="company-slogan"></h2>
+                </div>
+                <div class="search-1">
+                    <input type="text" placeholder="Search...">
+                </div>
+            </header>
+        </div>
+
+        <!--------------- nav --------------->
+        <div class="nav-wrapper">
+            <nav>
+                <div class="menu">
+                    <div class="menu-top"></div>
+                    <div class="menu-middle"></div>
+                    <div class="menu-bottom"></div>
+                </div>
+                <ul class="nav-links">
+                    <li class="inactive" id="first-li"><a href="https://tysoncottam.netlify.com/">Locations</a></li>
+                    <li class="active"><a href="#">Visit</a></li>
+                    <li class="inactive"><a href="https://tysoncottam.netlify.com/">Services</a></li>
+                    <li class="inactive"><a href="https://tysoncottam.netlify.com/">Gallery</a></li>
+                    <li class="inactive"><a href="https://tysoncottam.netlify.com/">About</a></li>
+                    <li class="inactive" id="last-li"><a href="https://tysoncottam.netlify.com/">Help</a></li>
+                </ul>
+                <div class="search-2">
+                    <input type="text" placeholder="Search...">
+                </div>
+            </nav>
+        </div>
+
+        <!--------------- main --------------->
+        <main>
+            <section class="main-section">
+                <div>
+                    <h1 id="welcomeMessage"></h1>
+                    <h3>What I learned:</h3>
+                    <ul>
+                        <li><i class="ion-android-checkbox"></i><p>Implement Functions</p></li>
+                        <li><i class="ion-android-checkbox"></i><p>Implement a multi level if-then-else</p></li>
+                        <li><i class="ion-android-checkbox"></i><p>Use innerText to provide user feedback</p></li>
+                        <li><i class="ion-android-checkbox"></i><p>Implement a switch statement</p></li>
+                        <li><i class="ion-android-checkbox"></i><p>Dynamically load a graphic</p></li>
+                        <li><i class="ion-android-checkbox"></i><p>Create and append an image element</p></li>
+                    </ul>
+                    <div class="properties-div">
+                        <div class="center-titles">
+                            <h2>Guessing Game:</h2>
+                            <h3>Pick a number (1-15)</h3>
+                        </div>
+                        <div class="regular-text">
+                            <div class="large-2 play-div">
+                                <div class="title-text">
+                                    <h2>Play</h2>
+                                </div>
+                                <div class="entry-text">
+                                    <input id="guess" type="number" placeholder="1-15">
+                                    <button onclick="evalGuess()">Guess</button>
+                                    <button onClick="window.location.reload();">Restart</button>
+                                </div>
+                            </div>
+                            <div class="large-3 guess-div">
+                                <div class="title-text">
+                                    <h2>Guesses</h2>
+                                </div>
+                                <div class="entry-text">
+                                    <h3 id="attempts"></h3>
+                                </div>
+                            </div>
+                            <div class="large-4 feedback-div">
+                                <div class="title-text">
+                                    <h2>Feedback</h2>
+                                </div>
+                                <div class="entry-text">
+                                    <h3 id="feedback"></h3>
+                                </div>
+                            </div>
+                            <div class="large-3 award-div">
+                                <div class="title-text">
+                                    <h2>Award</h2>
+                                </div>
+                                <div class="entry-text">
+                                    <h3 id="award"></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--------------- footer --------------->
+        <div class="footer-wrapper">
+            <footer>
+                <div>
+                    &copy; 2019 Tyson Cottam
+                </div>
+                <div>
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com/"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="https://www.twitch.tv/"><i class="ion-social-twitch"></i></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+        <script src="js/app.js"></script>
+    </body>
+</html>

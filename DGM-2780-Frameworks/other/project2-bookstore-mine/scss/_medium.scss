@@ -1,0 +1,101 @@
+/* --------------- SASS --------------- */
+@for $i from 1 through 12 {
+  $w:(($i/12)-0.02)*100%;
+  .Mmedium-#{$i}{flex-basis: $w;}
+}
+@for $i from 1 through 12 {
+  $w:($i/12)*100%;
+  .medium-#{$i}{flex-basis: $w;}
+}
+
+/* --------------- html & body --------------- */
+
+
+/* --------------- body --------------- */
+
+
+/* --------------- mixed --------------- */
+
+
+/* --------------- header --------------- */
+
+
+/* --------------- nav --------------- */
+nav
+{
+    display: none !important;
+}
+
+.nav-menu
+{
+    display: block !important; 
+}
+
+/* --------------- main --------------- */
+
+
+/* --------------- main-section --------------- */
+.relax-section,
+.video-section
+{
+    height: auto;
+    padding: 20px 5px;
+}
+
+
+.relax-section .relax-container .relax-pic-box,
+.relax-section .relax-container .relax-info-box
+{
+    width: 70% !important;
+    height: auto !important;
+    margin: 0;
+}
+
+.relax-section .relax-container .relax-pic-box img,
+.relax-section .relax-container .relax-info-box div
+{
+    width: 80% !important;
+    height: auto !important;
+    padding: 5px;
+}
+
+.relax-section .relax-container .relax-pic-box img
+{
+    width: 100% !important;
+    padding: 0;
+}
+
+.relax-section .relax-container .relax-info-box div h3,
+.relax-section .relax-container .relax-info-box div h1,
+.relax-section .relax-container .relax-info-box div p
+{
+    font-size: 80%;
+    margin: 5px;
+}
+
+.picture-reveal-details h3
+{
+    font-size: 120% !important;
+}
+.social-data p,
+.social-data i
+{
+    font-size: 120% !important;
+}
+
+@media only screen and (max-width: 900px)
+{
+    .picture-reveal-details h3
+    {
+        font-size: 100% !important;
+    }
+    .social-data p,
+    .social-data i
+    {
+        font-size: 100% !important;
+    }
+}
+
+
+
+/* --------------- footer --------------- */

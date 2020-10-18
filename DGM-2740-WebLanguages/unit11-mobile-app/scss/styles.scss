@@ -1,0 +1,41 @@
+/* --------------- colors --------------- */
+$cottam-color: #c6faf1;
+$white-color: #fff;
+$website-theme: #71d7df;
+$secondary-website-theme: #4d9ba4;
+$third-website-theme: #59d1d9;
+$off-white: #eee;
+
+/*
+f0b7a8
+e8927d
+e17055
+dd5c3c
+*/
+
+/*
+85c0c7
+62aeb7
+48959d
+3a767d
+*/
+
+/* --------------- paddings --------------- */
+$padding-break: 1rem;
+$nav-size: 200px;
+$break-gutter: 1rem 2%;
+$nav-padding: 0px 29px;
+$nav-height: 75px;
+
+
+/* --------------- other --------------- */
+$standard-font-size: 16px;
+$max-width: 64rem;
+
+/* --------------- imports --------------- */
+@import "normalize";
+@import "large";
+@media only screen and (max-width: 64rem)
+{ @import "medium"; }
+@media only screen and (max-width: 48rem)
+{ @import "small"; }

@@ -1,0 +1,21 @@
+header, nav, .hero-section, main, footer
+{
+    max-width: $max-width;
+    margin: auto;
+}
+nav ul
+{
+    padding-left: $gutter;
+}
+nav li
+{
+    width: auto;
+}
+nav a
+{
+    padding: $large-nav-padding;
+}
+.flex-container div
+{
+    flex-basis: 25%;
+}

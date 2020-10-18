@@ -1,0 +1,209 @@
+/* --------------- * --------------- */
+*
+{
+    box-sizing: border-box;
+}
+
+/* --------------- clear fix --------------- */
+.clearfix:after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* --------------- similar --------------- */
+
+h1,
+h2,
+p,
+nav ul
+{
+    margin: 0;
+}
+
+main h2
+{
+    color: $website-theme; 
+}
+
+nav,
+footer
+{
+    background-color: $website-theme;
+}
+
+nav a,
+main
+{
+    display: block;
+}
+
+nav a,
+footer
+{
+    text-align: center;
+}
+
+
+nav a,
+footer
+{
+    color: $off-white;
+}
+
+header,
+main,
+footer
+{
+    padding: $break-gutter; 
+}
+
+header,
+footer
+{
+    font-weight: 400;
+}
+
+nav,
+main
+{
+    font-weight: 300; 
+}
+
+/* --------------- body --------------- */
+body
+{
+    
+    font-family: 'Lato', sans-serif;
+    font-size: $standard-font-size;
+}
+
+.nf-wrapper
+{
+    width: 100%;
+    background-color: $website-theme;
+}
+
+.h-wrapper
+{
+    width: 100%;
+    background-color: $website-theme;
+    border-bottom: 2px solid #fff;
+}
+
+/* --------------- header --------------- */
+
+header
+{
+    background-color: $website-theme;
+    color: #fff;
+    font-family: 'Permanent Marker', cursive;
+}
+
+header h1
+{
+    font-size: 250%;
+    text-transform: uppercase;
+}
+
+header h2
+{
+    font-size: 130%;
+}
+
+/* --------------- nav --------------- */
+nav ul
+{
+    padding: 0;
+}
+
+nav li
+{
+    list-style-type: none;
+}
+
+nav a
+{
+    padding: $nav-padding; 
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    background-color: lighten($website-theme, 10%);
+    transition: background-color 0.2s;
+}
+
+nav li.active
+{
+    background-color: darken($website-theme, 15%);
+}
+
+/* --------------- main --------------- */
+
+.flex-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.flex-container div
+{
+    flex-basis: 100%;
+    padding: 10px;
+}
+
+.flex-container img
+{
+    width: 50%;
+    height: auto;
+    clip-path: circle(50%);
+    float: right;
+    margin-left: 15px;
+    shape-outside:circle();
+}
+
+.flex-container p
+{
+    margin-top: 5px;
+    text-align: justify;
+}
+
+.lazy-loading
+{
+    width: 100%;
+}
+
+.lazy-loading figure 
+{
+    margin: 0;
+    width: 100%;
+    height: 0;
+    padding-bottom: 67%; /* You define this doing image height / width * 100% */
+    position: relative;
+}
+
+.lazy-loading figure img
+{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    border: 3px solid #ebebeb;
+    box-shadow: 5px 5px 50px #959595;
+    transform: scale(.97);
+    transition: transform 0.6s;
+}
+
+.lazy-loading figure img:hover
+{
+    transform: scale(1);
+}
+
+/* --------------- footer --------------- */
+
+footer
+{
+    font-family: 'Permanent Marker', cursive;
+}

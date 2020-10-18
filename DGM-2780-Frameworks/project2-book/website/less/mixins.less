@@ -1,0 +1,75 @@
+/* ---------------- mixins ---------------- */
+.row-flex
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.col-flex
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.custom-btn
+{
+    padding: 10px 30px;
+    margin: 10px;
+    font-size: 150%;
+    font-family: 'Baloo 2', cursive;
+    font-weight: 500;
+    background-color: darken(@website-color, 5%);
+    border: 3px solid @off-white;
+    color: @off-white;
+    cursor: pointer;
+    transition: background-color 0.4s, color 0.4s;
+    &:hover
+    {
+        background-color: @off-white;
+        color: @website-color;
+    }
+    @media only screen and (max-width: 600px)
+    {
+        padding: 7px 20px;
+        font-size: 125%;
+    }
+}
+
+.small-btn
+{
+    .custom-btn();
+    padding: 7px 20px;
+    font-size: 125%;
+}
+.custom-input
+{
+    padding: 7px 20px;
+    font-size: 125%;
+    margin: 10px;
+    font-family: 'Baloo 2', cursive;
+    font-weight: 500;
+    background-color: #fff;
+    border: 3px solid @off-white;
+    color: @off-white;
+    cursor: pointer;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.sec-padding
+{
+    padding: 40px 20px;
+    margin: 20px 0;
+    @media only screen and (max-width: 600px)
+    {
+        padding: 20px 10px;
+        margin: 10px 0;
+    }
+    
+}

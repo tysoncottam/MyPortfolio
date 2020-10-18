@@ -1,0 +1,400 @@
+/* --------------- SASS --------------- */
+@for $i from 1 through 12 {
+    $w:(($i/12)-0.02)*100%;
+    .Mlarge-#{$i}{flex-basis: $w;}
+}
+@for $i from 1 through 12 {
+    $w:($i/12)*100%;
+    .large-#{$i}{flex-basis: $w;}
+}
+
+/* --------------- html & body --------------- */
+*
+{
+    box-sizing: border-box;
+}
+
+*:focus
+{
+    outline:none;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: $standard-font-size;
+    overflow-x: hidden;
+    width: 100vw;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+/* --------------- clear fix --------------- */
+.clearfix:after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* --------------- body --------------- */
+
+/* --------------- mixed --------------- */
+body,
+header,
+.header-1,
+nav,
+.nav-links,
+footer,
+.social-links,
+main,
+.people-section,
+.people-section div,
+.cases-section,
+.blogs-section,
+.blogs-section div,
+.blogs-section h3,
+.blogs-section p,
+.tip-faq,
+.tip,
+.tip h2,
+.tip p,
+.tip a,
+.faq,
+.faq h2,
+.faq p,
+.faq a,
+.slider-section,
+.card-section
+{
+    display: flex;
+    align-items: center;
+}
+
+header,
+nav,
+main,
+footer
+{
+    max-width: $max-width;
+}
+
+.people-section,
+.cases-section,
+.blogs-section,
+.tip-faq
+{
+    flex-wrap: wrap;
+}
+
+h1,
+h2,
+p,
+nav ul
+{
+    margin: 0;
+}
+
+main h2
+{
+    color: $website-theme;
+}
+
+footer
+{
+    background-color: $website-theme;
+}
+
+nav a
+{
+    display: block;
+}
+
+nav a,
+footer,
+p
+{
+    text-align: center;
+}
+
+nav a,
+footer
+{
+    color: $off-white;
+}
+
+header,
+nav,
+main,
+footer
+{
+    padding: $break-gutter;
+}
+
+footer
+{
+    font-weight: 400;
+    background-color: $website-theme;
+}
+
+header, nav, main, footer
+{
+    margin: auto;
+}
+
+.header-wrapper,
+.nav-wrapper,
+.footer-wrapper
+{
+    width: 100%;
+}
+
+/* --------------- header --------------- */
+header
+{
+    color: $off-white;
+    height: 325px;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(145, 145, 145, 0.41), rgba(145, 145, 145, 0.41)), url(../images/fortune-background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.header-1
+{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+header h1
+{
+    font-size: 250%;
+    padding: 2px;
+}
+
+header h2
+{
+    font-size: 150%;
+    padding: 2px;
+}
+
+.search-1 input
+{
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    padding: 8px 5px;
+    border: 4px solid $off-white;
+}
+
+/* --------------- nav --------------- */
+
+nav
+{
+    justify-content: flex-start;
+    color: $off-white;
+    max-height: 55px;
+    min-height: 55px;
+    background-color: $website-theme;
+}
+
+.nav-links
+{
+    justify-content: space-around;
+    padding: 0;
+}
+
+.nav-links li,
+.social-links li
+{
+    list-style: none;
+}
+
+.nav-links a,
+.social-links a
+{
+    color: $off-white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: 400;
+    white-space: nowrap;
+    padding: $nav-padding;
+}
+
+nav a:hover
+{
+    background-color: darken($website-theme, 10%);
+    transition: background-color 0.2s;
+}
+
+nav li.active
+{
+    background-color: darken($website-theme, 10%);
+}
+
+.menu,
+.search-2
+{
+    display: none;
+}
+
+/* ------------------------------ main ------------------------------ */
+main
+{
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 auto;
+    width: $max-width;
+}
+
+/* --------------- main-section --------------- */
+.main-section
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    color: $website-theme;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    div
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        h1,
+        h3
+        {
+            padding: 10px 5px;
+            margin: 0;
+        }
+        ul
+        {
+            margin: 0 0 0 25px;
+            padding: 0;
+            li
+            {
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                flex-wrap: wrap;
+                i
+                {
+                    font-size: 200%;
+                    padding: 0 5px;
+                }
+                a
+                {
+                    text-decoration: none;
+                }
+            }
+        }
+        .fortune-div
+        {
+           h2
+            {
+                padding: 20px 0;
+            }
+        }
+    }
+}
+
+/* --------------- footer --------------- */
+footer
+{
+    background-color: $website-theme;
+}
+
+footer,
+.social-links
+{
+    justify-content: center;
+    flex-direction: row;
+}
+
+footer div
+{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px
+}
+
+footer div:nth-child(2)
+{
+    justify-content: flex-start;
+}
+
+.social-links
+{
+    text-decoration: none;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.ion-social-facebook
+{
+    font-size: 30px;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-twitch
+{
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.ion-social-facebook:hover,
+.ion-social-facebook:active,
+.ion-social-twitter:hover,
+.ion-social-twitter:active,
+.ion-social-twitch:hover,
+.ion-social-twitch:active
+{
+    color: darken($website-theme, 15%);
+}
+
+.social-links
+{
+    margin: 0;
+    padding: 0;
+}
+
+.social-links li
+{
+    margin: 0;
+    padding: 0;
+    margin-right: 30px;
+}
+
+.social-links li:nth-child(3)
+{
+    margin-right: 0px;
+}
+
+.social-links a
+{
+    margin: 0;
+    padding: 0 !important;
+}

@@ -1,0 +1,102 @@
+/* --------------- SASS --------------- */
+@for $i from 1 through 12 {
+  $w:(($i/12)-0.02)*100%;
+  .Mmedium-#{$i}{flex-basis: $w;}
+}
+@for $i from 1 through 12 {
+  $w:($i/12)*100%;
+  .medium-#{$i}{flex-basis: $w;}
+}
+
+/* --------------- html & body --------------- */
+
+
+/* --------------- body --------------- */
+
+
+/* --------------- mixed --------------- */
+
+
+/* --------------- header --------------- */
+
+
+/* --------------- nav --------------- */
+nav
+{
+    justify-content: space-around;
+    padding: 0;
+}
+
+.nav-links
+{
+    width: 50%;
+}
+
+/* ------------------------------ main ------------------------------ */
+main
+{
+    width: 100vw;
+    padding-top: 0;
+}
+
+/* --------------- slider-section --------------- */
+.slider-section
+{
+    width: 100vw;
+    padding: 0;
+    div
+    {
+        margin: 0;
+        padding: 0;
+        img
+        {
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+.slick-dots 
+{
+    width: 100% !important;
+}
+
+/* --------------- card-section --------------- */
+.card-section
+{
+    div
+    {
+        padding: 10px;
+        .icon-moon,
+        .icon-home,
+        .icon-parks,
+        .icon-city
+        {
+            font-size: 800%;
+            top: 40%;
+        }
+        p
+        {
+            font-size: 220%;
+            top: 62%;
+        }
+        .icon-home,
+        .icon-city
+        {
+            font-size: 500%;
+        }
+        .icon-parks
+        {
+            font-size: 750%;
+            top: 36%;
+            left: 49.25%;
+        }
+        .icon-home
+        {
+            top: 39%;
+        }
+    }
+}
+
+
+/* --------------- footer --------------- */

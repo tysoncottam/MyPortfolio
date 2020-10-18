@@ -1,0 +1,42 @@
+header, nav, .hero-section, main, footer
+{
+    max-width: $max-width;
+    margin: auto;
+}
+
+nav ul
+{
+    text-align: center;
+}
+nav li
+{
+    display: inline-block;
+    padding: 0 26px;
+    float: none;
+    width: auto;
+}
+nav a
+{
+    font-size: 110%;
+}
+main div
+{
+    flex-basis: 25%;
+}
+main h2
+{
+    font-size: 145%;
+}
+
+.card h3
+{
+    margin: 5px 0;
+    padding: 0;
+    padding-top: 10px;
+    font-size: 130%;
+}
+
+.card-back h3
+{
+    padding: 0;
+}

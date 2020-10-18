@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<!------------------------------ head ------------------------------>
+    <head>
+        <!--------------- metas --------------->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Unit 2 Assignment">
+        <meta name="author" content="Tyson Cottam">
+
+        <!--------------- styles --------------->
+        <link href="css/styles.css" rel="stylesheet">
+        <link rel="shortcut icon" href="#">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+        <!--------------- google fonts --------------->
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+        <!--------------- title --------------->
+        <title>Joe's Bed and Breakfast</title>
+    </head>
+
+<!------------------------------ body ------------------------------>
+    <body>
+        <!--------------- header --------------->
+        <div class="header-wrapper">
+            <header>
+                <div class="header-1">
+                    <h1 id="company-name"></h1>
+                    <h2 id="company-slogan"></h2>
+                </div>
+                <div class="search-1">
+                    <input type="text" placeholder="Search...">
+                </div>
+            </header>
+        </div>
+
+        <!--------------- nav --------------->
+        <div class="nav-wrapper">
+            <nav>
+                <div class="menu">
+                    <div class="menu-top"></div>
+                    <div class="menu-middle"></div>
+                    <div class="menu-bottom"></div>
+                </div>
+                <ul class="nav-links">
+                    <li class="inactive" id="first-li"><a href="https://tysoncottam.netlify.com/">Locations</a></li>
+                    <li class="active"><a href="#">Visit</a></li>
+                    <li class="inactive"><a href="https://tysoncottam.netlify.com/">Services</a></li>
+                    <li class="inactive"><a href="https://tysoncottam.netlify.com/">Gallery</a></li>
+                    <li class="inactive"><a href="https://tysoncottam.netlify.com/">About</a></li>
+                    <li class="inactive" id="last-li"><a href="https://tysoncottam.netlify.com/">Help</a></li>
+                </ul>
+                <div class="search-2">
+                    <input type="text" placeholder="Search...">
+                </div>
+            </nav>
+        </div>
+
+        <!--------------- main --------------->
+        <main>
+            <section class="main-section">
+                <div>
+                    <h1 id="welcome-message"></h1>
+                    <h3>What I learned:</h3>
+                    <ul>
+                        <li><i class="ion-android-checkbox"></i><p>Build a simple webpage with a header, main, and footer.</p></li>
+                        <li><i class="ion-android-checkbox"></i><p>Find adnd correctly resize an image to be loaded into the header using CSS.</p></li>
+                        <li><i class="ion-android-checkbox"></i><p>Use JavaScript to insert text into an HTML element.</p></li>
+                        <li><i class="ion-android-checkbox"></i><p>Use JavaScript to insert the current date into a web page.</p></li>
+                        <li><i class="ion-android-checkbox"></i><p>Style a page using CSS.</p></li>
+                        <li><i class="ion-android-checkbox"></i><p>Push code to a GitHub repository.</p></li>
+                        <li><i class="ion-android-checkbox"></i><p>Deploy a webpage using Netlify.</p></li>
+                    </ul>
+                    <h3>Today's Date:
+                    <script>
+                        let theDate = new Date()
+                        document.write(theDate.toLocaleDateString())
+                    </script>
+                    </h3> 
+                    <p id="message-to-user"></p>
+                </div>
+            </section>
+        </main>
+
+        <!--------------- footer --------------->
+        <div class="footer-wrapper">
+            <footer>
+                <div>
+                    &copy; 2019 Tyson Cottam
+                </div>
+                <div>
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com/"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="https://www.twitch.tv/"><i class="ion-social-twitch"></i></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+        <script src="js/app.js"></script>
+    </body>
+</html>

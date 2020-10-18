@@ -1,0 +1,345 @@
+/* --------------- * --------------- */
+*
+{
+    box-sizing: border-box;
+}
+
+*:focus
+{
+    outline:none;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+/* --------------- clear fix --------------- */
+.clearfix:after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* --------------- similar --------------- */
+
+h1,
+h2,
+p,
+nav ul
+{
+    margin: 0;
+}
+
+header,
+main h2
+{
+    color: $theme-text-color;
+    text-shadow: 4px 4px 4px darken($website-theme, 15%);
+}
+
+nav,
+footer
+{
+    background-color: $website-theme;
+}
+
+nav a,
+main
+{
+    display: block;
+}
+
+nav a,
+footer,
+p
+{
+    text-align: center;
+}
+
+nav a,
+footer
+{
+    color: $theme-text-color;
+    font-size: 110%;
+    font-weight: 400;
+}
+
+header,
+main,
+footer
+{
+    padding: $break-gutter; 
+}
+
+header,
+footer
+{
+    font-weight: 400;
+}
+
+main
+{
+    font-weight: 300; 
+}
+
+/* --------------- body --------------- */
+body
+{
+    font-family: 'Fugaz One', cursive;
+    font-size: $standard-font-size;
+}
+
+.nav-foot-wrapper
+{
+    width: 100%;
+    background-color: $website-theme;
+}
+
+.header-wrapper
+{
+    width: 100%;
+    background-color: $website-theme;
+    border-bottom: 2px solid rgba(238, 238, 238, 0.5);
+}
+
+/* --------------- header --------------- */
+header
+{
+    text-align: center;
+    background-color: $website-theme;
+}
+
+/*
+h1
+{
+    font-size: 275%;
+    padding: 10px;
+}
+
+h2
+{
+    font-size: 200%;
+    padding: 10px;
+    letter-spacing: 3px;
+}
+*/
+
+header img
+{
+    width: 300px;
+    height: auto;
+}
+
+/* --------------- nav --------------- */
+nav ul
+{
+    padding: 0;
+}
+
+nav li
+{
+    list-style: none;
+    border-right: 2px solid rgba(238, 238, 238, 0.5);
+}
+
+nav li:last-child
+{
+    border-right: 2px solid transparent;
+}
+
+nav a
+{
+    padding: $nav-padding; 
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+.active a
+{
+    color: $theme-text-color;
+}
+
+.active
+{
+    background-color: darken($website-theme, 15%);
+}
+
+nav li:hover,
+.active:hover
+{
+    background-color: darken($website-theme, 15%);
+    transition: background-color 0.3s;
+}
+
+/* --------------- main --------------- */
+
+.background-image
+{
+    width: 100%;
+    background-image: linear-gradient(rgba(178, 178, 178, 0.60), rgba(178, 178, 178, 0.6)),url(../images/background-pokemon-2.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 30px;
+}
+
+main
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main h2
+{
+    margin-bottom: 10px;
+    font-size: 150%;
+    overflow: hidden;
+}
+
+main div
+{
+    flex-basis: 50%;
+    padding: 15px;
+}
+
+main img
+{
+    width: 100%;
+    height: auto;   
+}
+
+main p
+{
+    margin-top: 5px;
+}
+
+.picDivs
+{
+    width: 100%;
+}
+
+.charDivs 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h2,
+main h3,
+main p
+{
+    color: $white-color;
+}
+
+.button-section
+{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+}
+
+.new-pokemon-button
+{
+    display: flex;
+    justify-content: center;
+    width: 225px;
+    height: 55px;
+    padding: 0;
+    border-radius: 10px;
+    button
+    {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        border-radius: 10px;
+        font-family: 'Fugaz One', cursive;
+        background-color: $secondary-theme;
+        color: $white-color;
+        font-size: 110%;
+    }
+}
+/*--------------------------------------------------------------*/
+
+.scene
+{
+    perspective: 2000px;
+    width: 700px;
+    height: 350px;
+    border-radius: 10px;
+    transform: scale(0.97);
+    transition: transform 0.3s;
+    
+    &:hover
+    {
+        transform: scale(1);
+    }
+}
+
+
+
+.card 
+{
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 50px #5a5a5a;
+    border: 3px solid rgb(235, 235, 235);
+}
+
+
+
+.card.is-flipped 
+{
+    transform: rotateY(-180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+}
+
+.charDivs 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: $theme-text-color;
+    text-align: center;
+    backface-visibility: hidden;
+}
+
+.card-front 
+{
+    background-image: url(../images/pokemon-back-card.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.card-back 
+{
+    background-image: linear-gradient(rgba(47, 97, 156, 0.6), rgba(47, 97, 156, 0.6)),url(../images/pokemon-back-card.png);
+    background-position: center;
+    background-size: cover;
+    transform: rotateY(-180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    h2,
+    h3,
+    p
+    {
+        margin: 5px 0;
+        padding: 0;
+    }
+}

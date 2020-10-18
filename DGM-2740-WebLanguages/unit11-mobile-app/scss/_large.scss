@@ -1,0 +1,516 @@
+/* --------------- SASS --------------- */
+@for $i from 1 through 12 {
+    $w:(($i/12)-0.02)*100%;
+    .Mlarge-#{$i}{flex-basis: $w;}
+}
+@for $i from 1 through 12 {
+    $w:($i/12)*100%;
+    .large-#{$i}{flex-basis: $w;}
+}
+
+/* --------------- html & body --------------- */
+*
+{
+    box-sizing: border-box;
+}
+
+*:focus
+{
+    outline:none;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: $standard-font-size;
+    overflow-x: hidden;
+    width: 100vw;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+/* --------------- clear fix --------------- */
+.clearfix:after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* --------------- body --------------- */
+
+/* --------------- mixed --------------- */
+body,
+header,
+.header-1,
+nav,
+.nav-links,
+footer,
+.social-links,
+main,
+.people-section,
+.people-section div,
+.cases-section,
+.blogs-section,
+.blogs-section div,
+.blogs-section h3,
+.blogs-section p,
+.tip-faq,
+.tip,
+.tip h2,
+.tip p,
+.tip a,
+.faq,
+.faq h2,
+.faq p,
+.faq a,
+.slider-section,
+.card-section
+{
+    display: flex;
+    align-items: center;
+}
+
+header,
+main,
+footer
+{
+    max-width: $max-width;
+}
+
+.people-section,
+.cases-section,
+.blogs-section,
+.tip-faq
+{
+    flex-wrap: wrap;
+}
+
+h1,
+h2,
+p,
+nav ul
+{
+    margin: 0;
+}
+
+
+
+footer
+{
+    background-color: $website-theme;
+}
+
+nav a
+{
+    display: block;
+}
+
+nav a,
+footer,
+p
+{
+    text-align: center;
+}
+
+nav a,
+footer
+{
+    color: $off-white;
+}
+
+header,
+nav,
+main,
+footer
+{
+    padding: $break-gutter;
+}
+
+footer
+{
+    font-weight: 400;
+    background-color: $website-theme;
+}
+
+header, nav, main, footer
+{
+    margin: auto;
+}
+
+.header-wrapper,
+.nav-wrapper,
+.footer-wrapper
+{
+    width: 100%;
+    background-color: $website-theme;
+}
+
+/* --------------- header --------------- */
+header
+{
+    color: $off-white;
+    height: 100px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-1
+{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+header h1
+{
+    font-size: 200%;
+    padding: 2px;
+}
+
+header h2
+{
+    font-size: 150%;
+    padding: 2px;
+}
+
+.search-1 input
+{
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* --------------- nav --------------- */
+
+.nav-wrapper
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+
+nav
+{
+    justify-content: center;
+    color: $off-white;
+    max-height: $nav-height;
+    min-height: $nav-height;
+    background-color: $website-theme;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav-links
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.nav-links li,
+.social-links li
+{
+    list-style: none;
+}
+
+.nav-links a,
+.social-links a
+{
+    color: $off-white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: 400;
+    white-space: nowrap;
+    padding: 0;
+}
+
+.menu,
+.search-2
+{
+    display: none;
+}
+
+.nav-links
+{
+    div
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        cursor: pointer;
+        width: 200px;
+        height: $nav-height;
+        border-right: 2px solid $off-white;
+        &:hover
+        {
+            background-color: darken($third-website-theme, 18%);
+            transition: background-color 0.4s;
+        }
+        i
+        {
+            color: $off-white;
+            margin: 0;
+            padding: 5px;
+            padding-bottom: 0;
+            font-size: 200%;
+        }
+        li
+        {
+            padding: 5px;
+            padding-top: 0;
+        }
+    }
+    div:nth-child(2)
+    {
+        width: 150px;
+    }
+    div:nth-child(3)
+    {
+        border-right: 2px solid transparent;
+    }
+    .active
+    {
+        background-color: darken($third-website-theme, 20%);
+    }
+}
+
+/* ------------------------------ main ------------------------------ */
+main
+{
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: $nav-height;
+    padding: 0;
+}
+
+main h2,
+main h3
+{
+    color: $secondary-website-theme;
+    margin: 0;
+    padding: 5px;
+}
+
+main h2
+{
+    font-size: 130%;
+}
+
+main h3
+{
+    font-size: 120%;
+}
+
+/* --------------- first-section --------------- */
+
+
+.first-section
+{
+    .first-wrapper
+    {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: $secondary-website-theme;
+        padding: 15px;
+        div
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 64rem;
+            margin: 0 auto;
+            padding: 0 2%;
+            h2
+            {
+                color: $off-white;
+                font-size: 140% !important;
+            }
+        }
+    }
+}
+
+/* --------------- second-section --------------- */
+.second-section
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    div
+    {
+        padding: 10px;
+        .hotel-picture
+        {
+            padding: 0;
+            img
+            {
+                width: 100%;
+                height: auto;
+            }
+            div
+            {
+                padding: 0;
+                position: relative;
+                h3
+                {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 10px;
+                    padding: 8px;
+                    color: $off-white;
+                    background-color: rgba(59, 59, 59, 0.6);
+                    z-index: 1;
+                }
+            }
+        }
+        .hotel-info
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            border: 4px solid $website-theme;
+            .hotel-address
+            {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                flex-wrap: wrap;
+                padding: 0;
+                i
+                {
+                    color: $secondary-website-theme;
+                    margin: 0;
+                    padding: 5px;
+                    font-size: 200%;
+                }
+            }
+            .hotel-phone
+            {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                flex-wrap: wrap;
+                padding: 0;
+                i
+                {
+                    color: $secondary-website-theme;
+                    margin: 0;
+                    padding: 5px;
+                    font-size: 200%;
+                }
+            }
+        }
+    }
+}
+
+/* --------------- footer --------------- */
+footer
+{
+    background-color: $website-theme;
+}
+
+footer,
+.social-links
+{
+    justify-content: center;
+    flex-direction: row;
+}
+
+footer div
+{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px
+}
+
+footer div:nth-child(2)
+{
+    justify-content: flex-start;
+}
+
+.social-links
+{
+    text-decoration: none;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.ion-social-facebook
+{
+    font-size: 30px;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-twitch
+{
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.ion-social-facebook:hover,
+.ion-social-facebook:active,
+.ion-social-twitter:hover,
+.ion-social-twitter:active,
+.ion-social-twitch:hover,
+.ion-social-twitch:active
+{
+    color: lighten($website-theme, 20%);
+}
+
+.social-links
+{
+    margin: 0;
+    padding: 0;
+}
+
+.social-links li
+{
+    margin: 0;
+    padding: 0;
+    margin-right: 30px;
+}
+
+.social-links li:nth-child(3)
+{
+    margin-right: 0px;
+}
+
+.social-links a
+{
+    margin: 0;
+    padding: 0 !important;
+}

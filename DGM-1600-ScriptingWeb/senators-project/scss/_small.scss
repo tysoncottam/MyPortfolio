@@ -1,0 +1,246 @@
+/* --------------- html & body --------------- */
+*
+{
+    box-sizing: border-box;
+}
+
+*:focus
+{
+    outline:none;
+}
+
+html
+{
+    scroll-behavior: smooth;
+    background-image: linear-gradient(rgba(209, 209, 209, 0.4), rgba(155, 155, 155, 0.7)), url(../images/main-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body
+{
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: $standard-font-size;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    
+}
+/* --------------- header-section --------------- */
+.header-section
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 200px;
+    padding: 0;
+    margin: 0;
+    .header-section-container
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: $max-width;
+        
+        padding: 0;
+        margin: 0;
+        h1
+        {
+            font-size: 400%;
+            color: $off-white;
+        }
+    }
+}
+
+/* --------------- dropdown-section --------------- */
+.dropdown-section
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    .dropdown-section-container
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: $max-width;
+        padding: 0;
+        margin: 0;
+        select
+        {
+            background-color: rgb(187, 187, 187);
+            border: 3px solid $off-white;
+            color: $off-white;
+            width: 250px;
+            height: 45px;
+        }
+        .filter-display,
+        .votes-display
+        {
+            color: $off-white;
+            font-weight: 500;
+        }
+        .filter-display
+        {
+            padding-top: 10px;
+        }
+    }
+}
+
+/* --------------- card-section --------------- */
+
+.card-section
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    .card-section-container
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: $max-width;
+        padding: 15px;
+        margin: 0 auto;
+        .card
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-basis: 45%;
+            padding: 15px;
+            margin: 5px;
+            .card-image
+            {
+                width: 100%;
+                figure
+                {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    overflow: hidden;
+                    img
+                    {
+                        width: 250px;
+                        height: 320px;
+                        border: 3px solid $off-white;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+        .cardContent
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 15px;
+            margin: 0;
+            .divPart1
+            {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                padding: 10px;
+                .housePicDiv,
+                .twitterPicDiv
+                {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    width: 50%;
+                    img
+                    {
+                        width: 50%;
+                        height: auto;
+                        padding: 5px;
+                    }
+                }
+                .twitterPicDiv
+                {
+                    cursor: pointer;
+                    img
+                    {
+                        &:hover
+                        {
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+            .divPartName
+            {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                padding: 10px;
+                height: 70px;
+                p
+                {
+                    font-size: 120%;
+                    text-align: center;
+                }
+            }
+            .divPart2
+            {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                padding: 0px;
+                div
+                {
+                    padding: 0;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                }
+                .officeDiv
+                {
+                    height: 85px
+                }
+                .phoneDiv
+                {
+                    height: 50px
+                }
+            }
+        }
+    }
+}

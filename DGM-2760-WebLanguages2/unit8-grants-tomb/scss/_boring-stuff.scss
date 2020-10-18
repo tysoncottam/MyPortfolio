@@ -1,0 +1,146 @@
+/* --------------- html & body --------------- */
+*
+{
+    box-sizing: border-box;
+}
+
+*:focus
+{
+    outline:none;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    font-family: 'Rancho', cursive;
+    font-size: $standard-font-size;
+    overflow-x: hidden;
+    width: 100vw;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+/* --------------- clear fix --------------- */
+.clearfix:after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* --------------- body --------------- */
+
+/* --------------- mixed --------------- */
+body,
+header,
+.header-1,
+nav,
+.nav-links,
+footer,
+.social-links,
+main,
+.people-section,
+.people-section div,
+.cases-section,
+.blogs-section,
+.blogs-section div,
+.blogs-section h3,
+.blogs-section p,
+.tip-faq,
+.tip,
+.tip h2,
+.tip p,
+.tip a,
+.faq,
+.faq h2,
+.faq p,
+.faq a,
+.slider-section,
+.card-section
+{
+    display: flex;
+    align-items: center;
+}
+
+header,
+nav,
+main,
+footer
+{
+    max-width: $max-width;
+}
+
+.people-section,
+.cases-section,
+.blogs-section,
+.tip-faq
+{
+    flex-wrap: wrap;
+}
+
+h1,
+h2,
+p,
+nav ul
+{
+    margin: 0;
+}
+
+main h2
+{
+    color: $website-theme;
+}
+
+footer
+{
+    background-color: $website-theme;
+}
+
+nav a
+{
+    display: block;
+}
+
+nav a,
+footer,
+p
+{
+    text-align: center;
+}
+
+nav a,
+footer
+{
+    color: $off-white;
+}
+
+header,
+nav,
+main,
+footer
+{
+    padding: $break-gutter;
+}
+
+footer
+{
+    font-weight: 400;
+    background-color: $website-theme;
+}
+
+header, nav, main, footer
+{
+    margin: auto;
+}
+
+.header-wrapper,
+.nav-wrapper,
+.footer-wrapper
+{
+    width: 100%;
+}

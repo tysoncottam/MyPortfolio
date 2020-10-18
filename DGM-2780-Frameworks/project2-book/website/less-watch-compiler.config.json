@@ -1,0 +1,6 @@
+{
+    "watchFolder": "less",   
+    "outputFolder": "css",
+    "sourceMap": true,
+    "mainFile": "index.less"
+}

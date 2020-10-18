@@ -1,0 +1,150 @@
+/* ----- apply all ----- */
+*
+{
+    /* -- natural box model -- */
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+html
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+    /* -- prevents iPhone from resizing -- */
+    -webkit-text-size-adjust: none;
+    
+}
+
+/* ----- body rules ----- */
+body
+{
+    color: #414141;
+}
+
+/* ----- max width rules ----- */
+header, nav, main, footer
+{
+    max-width: 75rem;
+    margin: auto;
+}
+
+/* ----- header rules ----- */
+header
+{
+    background-color: #bdefe6;
+    padding: 1rem 2%;
+    border-bottom: 1px solid #414141;
+}
+
+header h1,
+header h2
+{
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/* ----- nav rules ----- */
+nav
+{
+    background-color: #414141;
+}
+
+nav ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+nav li
+{
+    list-style-type: none;
+}
+
+nav li.active
+{
+    background-color: #bdefe6;
+}
+
+nav a
+{
+    display: block;
+    padding: .8rem 0; /* 44px Apple Recommended */
+    color: #eee;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover
+{
+    background-color: #bdefe6;
+    color: #414141;
+}
+
+nav a.active
+{
+    color: #414141;
+}
+
+/* ----- main ----- */
+main
+{
+    padding: 1rem 2%;
+    display: block;
+}
+
+main h1
+{
+    color: #aedcd4; 
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+main figure img
+{
+    width: 100%;
+}
+
+main figure
+{
+    margin: 0 25%;
+}
+
+main figcaption
+{
+    text-align: center;
+    font-size: .8rem;
+}
+
+/* ----- phone displays ----- */
+.ipad-pic
+{
+    display: none;
+}
+
+.laptop-pic
+{
+    display: none;
+}
+
+/* ----- footer ----- */
+footer
+{
+    text-align: center;
+    padding: 1rem 2%;
+    background-color: #bdefe6;
+    color: #414141;
+}
+
+/* ----- clear fix ----- */
+.clearfix:after
+{
+    content: "";
+    display: block;
+    clear: both;
+}

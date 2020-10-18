@@ -1,0 +1,73 @@
+/* --------------- SASS --------------- */
+@for $i from 1 through 12 {
+  $w:(($i/12)-0.02)*100%;
+  .Mmedium-#{$i}{flex-basis: $w;}
+}
+@for $i from 1 through 12 {
+  $w:($i/12)*100%;
+  .medium-#{$i}{flex-basis: $w;}
+}
+
+/* --------------- html & body --------------- */
+
+
+/* --------------- body --------------- */
+
+
+/* --------------- mixed --------------- */
+
+
+/* --------------- header --------------- */
+
+
+/* --------------- nav --------------- */
+nav
+{
+    justify-content: space-around;
+    padding: 0;
+}
+
+.nav-links
+{
+    margin: 0 auto;
+}
+
+/* ------------------------------ main ------------------------------ */
+main
+{
+    width: 95vw;
+}
+
+.people-section
+{
+    width: 95vw;
+    justify-content: space-between;
+    #med-special
+    {
+        display: none;
+    }
+
+    #sm-special1,
+    #sm-special2
+    {
+        display: block;
+    }
+}
+
+
+
+/* --------------- people-section --------------- */
+
+
+/* --------------- footer --------------- */
+
+.footer-links
+{
+    justify-content: flex-start;
+    padding-left: 55%;
+}
+
+.right-side
+{
+    padding-left: 25%;
+}

@@ -1,0 +1,48 @@
+/* --------------- colors --------------- */
+$cottam-color: #c6faf1;
+$white-color: #fff;
+$website-theme: #0f5384;
+$off-white: #f6f6f6;
+
+
+/* --------------- paddings --------------- */
+$padding-break: 1rem;
+$nav-size: 200px;
+$break-gutter: 1rem 2%;
+$nav-padding: 18.5px 29px;
+
+/* --------------- other --------------- */
+$standard-font-size: 16px;
+$max-width: 64rem;
+
+/* --------------- mixins --------------- */
+@mixin col-flex
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+@mixin row-flex
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+/* --------------- imports --------------- */
+@import "normalize";
+@import "boring-Stuff";
+@import "large";
+@media only screen and (max-width: 64rem)
+{ @import "medium"; }
+@media only screen and (max-width: 48rem)
+{ @import "small"; }

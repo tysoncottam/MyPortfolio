@@ -1,0 +1,878 @@
+/* ---------------- imports ---------------- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* ---------------- variables ---------------- */
+/* ---------------- mixins ---------------- */
+.row-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.col-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.custom-btn {
+  padding: 10px 30px;
+  margin: 10px;
+  font-size: 150%;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 500;
+  background-color: #006752;
+  border: 3px solid #eee;
+  color: #eee;
+  cursor: pointer;
+  transition: background-color 0.4s, color 0.4s;
+}
+.custom-btn:hover {
+  background-color: #eee;
+  color: #008066;
+}
+@media only screen and (max-width: 600px) {
+  .custom-btn {
+    padding: 7px 20px;
+    font-size: 125%;
+  }
+}
+.small-btn {
+  padding: 10px 30px;
+  margin: 10px;
+  font-size: 150%;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 500;
+  background-color: #006752;
+  border: 3px solid #eee;
+  color: #eee;
+  cursor: pointer;
+  transition: background-color 0.4s, color 0.4s;
+  padding: 7px 20px;
+  font-size: 125%;
+}
+.small-btn:hover {
+  background-color: #eee;
+  color: #008066;
+}
+@media only screen and (max-width: 600px) {
+  .small-btn {
+    padding: 7px 20px;
+    font-size: 125%;
+  }
+}
+.custom-input {
+  padding: 7px 20px;
+  font-size: 125%;
+  margin: 10px;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 500;
+  background-color: #fff;
+  border: 3px solid #eee;
+  color: #eee;
+  cursor: pointer;
+  transition: background-color 0.4s, color 0.4s;
+}
+.sec-padding {
+  padding: 40px 20px;
+  margin: 20px 0;
+}
+@media only screen and (max-width: 600px) {
+  .sec-padding {
+    padding: 20px 10px;
+    margin: 10px 0;
+  }
+}
+/* ---------------- general ---------------- */
+* {
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Baloo 2', cursive;
+  font-size: 16px;
+  font-weight: 400;
+  overflow-x: hidden;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* ---------------- header ---------------- */
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #008066;
+  border-bottom: 5px solid #eee;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+.header-wrapper header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1200px;
+  color: #eee;
+}
+/* ---------------- company-info ---------------- */
+.company-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 10px 0px;
+}
+.company-info h1 {
+  font-size: 300%;
+  padding: 10px;
+  padding-bottom: 0px;
+  font-weight: 700;
+}
+.company-info h2 {
+  font-size: 150%;
+  padding: 10px;
+  padding-top: 0px;
+  margin-left: 3px;
+  font-weight: 500;
+}
+/* ---------------- nav ---------------- */
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 0px;
+}
+.nav h3 {
+  padding: 10px;
+  font-size: 125%;
+  cursor: pointer;
+}
+.nav h3:hover {
+  color: #c8c8c8;
+}
+.nav .nav-item {
+  border-right: 2px solid #eee;
+}
+.nav i {
+  padding: 10px;
+  font-size: 150%;
+  cursor: pointer;
+}
+.nav i:hover {
+  color: #c8c8c8;
+}
+/* ---------------- main ---------------- */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 115px;
+}
+/* ---------------- hero-section ---------------- */
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1200px;
+  justify-content: space-between;
+}
+.hero-section div {
+  flex-basis: 32%;
+}
+.hero-section div img {
+  width: 100%;
+  height: auto;
+}
+/* ---------------- event-section ---------------- */
+.event-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  margin: 20px 0;
+  width: 1200px;
+  background-color: #008066;
+  color: #eee;
+  margin-top: 0;
+}
+@media only screen and (max-width: 600px) {
+  .event-section {
+    padding: 20px 10px;
+    margin: 10px 0;
+  }
+}
+.event-section h1 {
+  font-size: 300%;
+  padding: 10px;
+  font-weight: 700;
+  text-align: center;
+}
+.event-section h2 {
+  font-size: 200%;
+  padding: 10px;
+  font-weight: 500;
+  text-align: center;
+}
+.event-section button {
+  padding: 10px 30px;
+  margin: 10px;
+  font-size: 150%;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 500;
+  background-color: #006752;
+  border: 3px solid #eee;
+  color: #eee;
+  cursor: pointer;
+  transition: background-color 0.4s, color 0.4s;
+}
+.event-section button:hover {
+  background-color: #eee;
+  color: #008066;
+}
+@media only screen and (max-width: 600px) {
+  .event-section button {
+    padding: 7px 20px;
+    font-size: 125%;
+  }
+}
+/* ---------------- store-section ---------------- */
+.store-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  margin: 20px 0;
+  justify-content: space-between;
+  width: 1200px;
+  background-color: #e1e1e1;
+  color: #008066;
+  padding: 40px 10px;
+}
+@media only screen and (max-width: 600px) {
+  .store-section {
+    padding: 20px 10px;
+    margin: 10px 0;
+  }
+}
+.store-section .store-container {
+  flex-basis: 40%;
+  padding: 10px;
+}
+.store-section .store-container img {
+  width: 100%;
+  height: auto;
+}
+.store-section .store-info {
+  flex-basis: 60%;
+  padding-left: 10px;
+}
+.store-section .store-info h1 {
+  font-size: 300%;
+  padding: 10px;
+}
+.store-section .store-info h2 {
+  font-size: 200%;
+  padding: 10px;
+}
+.store-section .store-info button {
+  padding: 10px 30px;
+  margin: 10px;
+  font-size: 150%;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 500;
+  background-color: #006752;
+  border: 3px solid #eee;
+  color: #eee;
+  cursor: pointer;
+  transition: background-color 0.4s, color 0.4s;
+}
+.store-section .store-info button:hover {
+  background-color: #eee;
+  color: #008066;
+}
+@media only screen and (max-width: 600px) {
+  .store-section .store-info button {
+    padding: 7px 20px;
+    font-size: 125%;
+  }
+}
+/* ---------------- social-section ---------------- */
+.social-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  margin: 20px 0;
+  width: 1200px;
+  background-color: #008066;
+  color: #eee;
+}
+@media only screen and (max-width: 600px) {
+  .social-section {
+    padding: 20px 10px;
+    margin: 10px 0;
+  }
+}
+.social-section .social-pics {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-basis: 100%;
+}
+.social-section .social-pics div {
+  flex-basis: 24%;
+}
+.social-section .social-pics div img {
+  width: 100%;
+  height: auto;
+  border: 5px solid #eee;
+}
+.social-section .social-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50%;
+}
+.social-section .social-info h1 {
+  font-size: 300%;
+  padding: 10px 0;
+  font-weight: 500;
+  text-align: center;
+}
+.social-section .social-info h2 {
+  font-size: 200%;
+  padding: 10px 0;
+  text-align: center;
+}
+.social-section .social-info button {
+  padding: 10px 30px;
+  margin: 10px;
+  font-size: 150%;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 500;
+  background-color: #006752;
+  border: 3px solid #eee;
+  color: #eee;
+  cursor: pointer;
+  transition: background-color 0.4s, color 0.4s;
+  margin-bottom: 0;
+}
+.social-section .social-info button:hover {
+  background-color: #eee;
+  color: #008066;
+}
+@media only screen and (max-width: 600px) {
+  .social-section .social-info button {
+    padding: 7px 20px;
+    font-size: 125%;
+  }
+}
+/* ---------------- inventory-section ---------------- */
+.inventory-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  margin: 20px 0;
+  justify-content: space-between;
+  width: 1200px;
+  background-color: #e1e1e1;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+  color: #008066;
+}
+@media only screen and (max-width: 600px) {
+  .inventory-title {
+    padding: 20px 10px;
+    margin: 10px 0;
+  }
+}
+.inventory-title h1 {
+  font-size: 300%;
+  padding: 10px 0;
+  font-weight: 500;
+  text-align: left;
+}
+.inventory-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  margin: 20px 0;
+  justify-content: space-between;
+  width: 1200px;
+  background-color: #e1e1e1;
+  padding-top: 0;
+  margin-top: 0;
+}
+@media only screen and (max-width: 600px) {
+  .inventory-section {
+    padding: 20px 10px;
+    margin: 10px 0;
+  }
+}
+.inventory-section div {
+  flex-basis: 24%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.inventory-section div img {
+  width: 100%;
+  height: auto;
+  border: 5px solid #eee;
+}
+.inventory-section div button {
+  padding: 10px 30px;
+  margin: 10px;
+  font-size: 150%;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 500;
+  background-color: #006752;
+  border: 3px solid #eee;
+  color: #eee;
+  cursor: pointer;
+  transition: background-color 0.4s, color 0.4s;
+  padding: 7px 20px;
+  font-size: 125%;
+}
+.inventory-section div button:hover {
+  background-color: #eee;
+  color: #008066;
+}
+@media only screen and (max-width: 600px) {
+  .inventory-section div button {
+    padding: 7px 20px;
+    font-size: 125%;
+  }
+}
+/* ---------------- find-store-section ---------------- */
+.find-store-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  margin: 20px 0;
+  width: 1200px;
+  background-color: #008066;
+  color: #eee;
+}
+@media only screen and (max-width: 600px) {
+  .find-store-section {
+    padding: 20px 10px;
+    margin: 10px 0;
+  }
+}
+.find-store-section .zipcode-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-basis: 30%;
+}
+.find-store-section .zipcode-area h2 {
+  font-size: 200%;
+  padding: 10px 0;
+  text-align: center;
+}
+.find-store-section .zipcode-area input {
+  padding: 7px 20px;
+  font-size: 125%;
+  margin: 10px;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 500;
+  background-color: #fff;
+  border: 3px solid #eee;
+  color: #eee;
+  cursor: pointer;
+  transition: background-color 0.4s, color 0.4s;
+  cursor: text;
+  color: rgba(0, 128, 102, 0.4);
+}
+.find-store-section .zipcode-area button {
+  padding: 10px 30px;
+  margin: 10px;
+  font-size: 150%;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 500;
+  background-color: #006752;
+  border: 3px solid #eee;
+  color: #eee;
+  cursor: pointer;
+  transition: background-color 0.4s, color 0.4s;
+  padding: 7px 20px;
+  font-size: 125%;
+}
+.find-store-section .zipcode-area button:hover {
+  background-color: #eee;
+  color: #008066;
+}
+@media only screen and (max-width: 600px) {
+  .find-store-section .zipcode-area button {
+    padding: 7px 20px;
+    font-size: 125%;
+  }
+}
+.find-store-section .maps-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-basis: 70%;
+}
+.find-store-section .maps-container img {
+  width: 100%;
+  height: auto;
+  border: 5px solid #eee;
+}
+/* ---------------- about-section ---------------- */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  margin: 20px 0;
+  justify-content: space-between;
+  width: 1200px;
+  background-color: #e1e1e1;
+  color: #008066;
+}
+@media only screen and (max-width: 600px) {
+  .about-section {
+    padding: 20px 10px;
+    margin: 10px 0;
+  }
+}
+.about-section h1 {
+  font-size: 300%;
+  padding: 10px 0;
+}
+.about-section h3 {
+  font-size: 120%;
+  padding: 10px 0;
+  width: 80%;
+}
+/* ---------------- footer ---------------- */
+.footer-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  margin: 20px 0;
+  width: 100%;
+  background-color: #008066;
+  border-top: 5px solid #eee;
+  color: #eee;
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 600px) {
+  .footer-wrapper {
+    padding: 20px 10px;
+    margin: 10px 0;
+  }
+}
+.footer-wrapper footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1200px;
+}
+.footer-wrapper footer .top-footer-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-wrapper footer .top-footer-section h3 {
+  font-size: 120%;
+  padding: 10px 40px;
+  margin-bottom: 10px;
+  border-right: 2px solid #eee;
+  cursor: pointer;
+}
+.footer-wrapper footer .top-footer-section h3:last-child {
+  border: none;
+}
+.footer-wrapper footer .top-footer-section h3:hover {
+  color: #c8c8c8;
+}
+.footer-wrapper footer .bottom-footer-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-wrapper footer .bottom-footer-section h3 {
+  font-size: 100%;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+.footer-wrapper footer .bottom-footer-section h3:hover {
+  color: #c8c8c8;
+}
+@media only screen and (max-width: 1200px) {
+  body {
+    font-size: 10px;
+  }
+  main {
+    margin-top: 85px;
+  }
+  .header-wrapper header,
+  .hero-section,
+  .event-section,
+  .store-section,
+  .social-section,
+  .inventory-title,
+  .inventory-section,
+  .find-store-section,
+  .about-section,
+  .footer-wrapper footer {
+    width: 100%;
+  }
+  .footer-wrapper footer .top-footer-section h3,
+  .footer-wrapper footer .bottom-footer-section h3 {
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 8px;
+  }
+  .header-wrapper header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .company-info {
+    align-items: center;
+  }
+  .company-info h2 {
+    padding: 0;
+  }
+  main {
+    margin-top: 127px;
+  }
+  .event-section {
+    margin-top: 0;
+  }
+  .store-section .store-container,
+  .store-section .store-info {
+    flex-basis: 100%;
+  }
+  .store-section .store-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .social-section .social-pics {
+    justify-content: space-around;
+  }
+  .social-section .social-pics div {
+    flex-basis: 48%;
+    padding: 5px 0;
+  }
+  .social-section .social-info {
+    width: 100%;
+  }
+  .footer-wrapper footer .top-footer-section h3 {
+    font-size: 100%;
+    padding: 5px;
+  }
+}
+/*# sourceMappingURL=index.css.map */

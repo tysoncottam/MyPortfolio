@@ -1,0 +1,402 @@
+/* --------------- SASS --------------- */
+@for $i from 1 through 12 {
+    $w:(($i/12)-0.02)*100%;
+    .Mlarge-#{$i}{flex-basis: $w;}
+}
+@for $i from 1 through 12 {
+    $w:($i/12)*100%;
+    .large-#{$i}{flex-basis: $w;}
+}
+
+/* --------------- html & body --------------- */
+*
+{
+    box-sizing: border-box;
+}
+
+*:focus
+{
+    outline:none;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: $standard-font-size;
+    overflow-x: hidden;
+    width: 100vw;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+/* --------------- clear fix --------------- */
+.clearfix:after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* --------------- body --------------- */
+
+/* --------------- header --------------- */
+
+/* --------------- nav --------------- */
+.nav-wrapper
+{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    nav
+    {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: $grey-color;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        border-bottom: 4px solid $off-white;
+        .menu
+        {
+            display: none;
+        }
+        .nav-links
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 0;
+            margin: 0;
+            .nav-breakers
+            {
+                width: 3px;
+                height: 50px;
+                background-color: $off-white;
+            }
+            li
+            {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                list-style: none;
+                padding: 30px 35px;
+                a
+                {
+                    color: $off-white;
+                    text-decoration: none;
+                    letter-spacing: 3px;
+                    font-weight: 300;
+                    white-space: nowrap;
+                    font-size: 200%;
+                    text-transform: uppercase;
+                    &:hover
+                    {
+                        color: lighten($off-white, 20%);
+                        transition: clor 0.4s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* --------------- main --------------- */
+
+/* --------------- main-page-section --------------- */
+.main-page
+{
+    width: 100vw;
+    background-image: url(../images/trees.jpg);
+    height: 100vh;
+    min-height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .user-information
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        width: 100vw;
+        img
+        {
+            width: 300px;
+            height: auto;
+            border: 6px solid $off-white;
+            border-radius: 50%;
+            box-shadow: 10px 10px 70px #484848;
+        }
+        h1,
+        h2
+        {
+            color: $off-white;
+            padding: 10px;
+            margin: 0;
+            text-align: center;
+        }
+        h1
+        {
+            font-size: 300%;
+            letter-spacing: 1px;
+            margin-top: 30px;
+        }
+        h2
+        {
+            font-weight: 400;
+        }
+    }
+    .projects-button-area
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-50%, -0%);
+        cursor: pointer;
+        i
+        {
+            color: $off-white;
+            font-size: 300%;
+            cursor: pointer;
+            padding: 10px 30px;
+            &:hover
+            {
+                color: lighten($off-white, 20%);
+                font-size: 350%;
+                transition: color 0.4s, font-size 0.4s;
+            }
+        }
+    }
+}
+
+/* --------------- projects-section --------------- */
+.projects-section
+{
+    width: 100vw;
+    background-color: $dark-grey-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px 0 0 0;
+    .projects-heading
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: $max-width;
+        padding: 0;
+        margin: 0;
+        div
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            h1
+            {
+                font-weight: 400;
+                text-transform: uppercase;
+                padding: 0;
+                margin: 0;
+                color: $off-white;
+                text-align: center;
+                font-size: 350%;
+            }
+        }
+    }
+    .projects-section-containter
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: $max-width;
+        padding: 30px 0;
+        margin: 0;
+            .projects-card
+            {
+                padding: 15px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                .card-info
+                {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    padding: 25px;
+                    background-color: $grey-color;
+                    border-radius: 12px;
+                    div
+                    {
+                        height: 75px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        flex-wrap: wrap;
+                    }
+                    img
+                    {
+                        width: 100%;
+                        height: auto;
+                        border: 3px solid $off-white;
+                        box-shadow: 10px 10px 50px #717171;
+                        opacity: 1;
+                        transform: scale(0.95);
+                        transition: transform 0.5s, opacity 0.5s;
+                        &:hover
+                        {
+                            opacity: 0.90;
+                            transform: scale(1);
+                        }
+                    }
+                    h1,
+                    h2
+                    {
+                        font-weight: 300;
+                        text-transform: uppercase;
+                        padding: 0;
+                        margin: 0;
+                        padding-bottom: 15px;
+                        color: $off-white;
+                        text-align: center;
+                    }
+                    h2
+                    {
+                        padding: 0;
+                        padding-top: 15px;
+                    }
+                }
+                .preview-hover
+                {
+                    img
+                    {
+                        cursor: default;
+                    }
+                }
+            }
+        
+    }
+}
+
+/* --------------- footer --------------- */
+.footer-wrapper
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    background-color: $grey-color;
+    footer
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        color: $off-white;
+        height: 75px;
+        div
+        {
+            width: 250px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 0 20px;
+            font-size: 140%;
+            .social-links
+            {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                text-decoration: none;
+                font-size: 25px;
+                padding: 0;
+                margin: 0;
+                li
+                {
+                    list-style: none;
+                    a
+                    {
+                        text-decoration: none;
+                        i
+                        {
+                            color: $off-white;
+                            font-size: 150%;
+                            cursor: pointer;
+                            padding: 0;
+                            margin: 0;
+                            padding-right: 40px;
+                            &:hover
+                            {
+                                color: lighten($off-white, 20%);
+                                transition: color 0.4s;
+                            }
+                        }
+                        .smaller-icon
+                        {
+                            font-size: 140%;
+                        }
+                    }
+                }
+            }
+        }
+        div:nth-child(1)
+        {
+            justify-content: flex-end;
+        }
+        div:nth-child(2)
+        {
+            justify-content: flex-start;
+        }
+    }
+}

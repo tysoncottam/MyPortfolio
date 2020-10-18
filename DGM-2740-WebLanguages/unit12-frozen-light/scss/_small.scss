@@ -1,0 +1,326 @@
+/* --------------- SASS --------------- */
+@for $i from 1 through 12 {
+    $w:(($i/12)-0.02)*100%;
+    .Msmall-#{$i}{flex-basis: $w;}
+}
+@for $i from 1 through 12 {
+    $w:($i/12)*100%;
+    .small-#{$i}{flex-basis: $w;}
+}
+
+/* --------------- html & body --------------- */
+html
+{
+    overflow: auto;
+}
+
+/* --------------- body --------------- */
+
+
+/* --------------- mixed --------------- */
+
+
+/* --------------- header --------------- */
+header
+{
+    justify-content: center;
+    text-align: center;
+    z-index: 5;
+}
+
+header input
+{
+    width: 150px;
+    border: 4px solid $off-white;
+}
+
+.logo-and-slogan
+{
+    z-index: 5;
+}
+
+.header-1
+{
+    align-items: center;
+    z-index: 5;
+}
+
+
+/* --------------- nav --------------- */
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px;
+}
+
+.nav-links
+{
+    position: absolute;
+    left: 50%;
+    height: 65vh;
+    min-height: 400px;
+    top: 209px;
+    display: flex;
+    background-image: linear-gradient(to right, #81ecec, #00cec9, #74b9ff);
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    transform: translateX(-250%);
+    justify-content: space-between;
+    z-index: 4;
+}
+
+.nav-links a
+{
+    border-bottom: 3px solid transparent;
+    padding: 0;
+    font-size: 130%;
+}
+
+#first-li
+{
+    padding-top: 35px;
+}
+
+#last-li
+{
+    padding-bottom: 30px;
+}
+
+.nav-links a:after
+{
+    text-decoration: none;
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    padding-top: 4px;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+.nav-links .inactive a:hover:after,
+nav li.active
+{
+    border-bottom: 2.5px solid #fff;
+}
+
+.nav-links li
+{
+    opacity: 0;
+}
+
+.nav-links .active a
+{
+    border-bottom: 0px solid transparent;
+}
+.nav-links .active
+{
+    padding: 0;
+}
+
+.menu
+{
+    display: block;
+    cursor: pointer;
+    z-index: 5;
+    margin-right: 15px;
+}
+
+.menu div
+{
+    width: 27px;
+    height: 3px;
+    background-color: $off-white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-break
+{
+    display: none;
+}
+
+/* --- search text fields --- */
+.search-1
+{
+    display: none;
+}
+
+.search-2
+{
+    display: block;
+    width: 100%;
+}
+
+.search-2 input
+{
+    display: flex;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    position: relative;
+    z-index: 5;
+    border: 4px solid $off-white;
+}
+
+
+
+/* --- special tiny mobile changes --- */
+@media only screen and (max-width: 450px)
+{
+    .nav-links
+    {
+        transform: translateX(-100%);
+    }
+}
+
+.nav-active
+{
+    transform: translateX(-50%);
+    padding: 0;
+    border: 4px solid $off-white;
+    border-radius: 15px;
+    transition: transform 0.5s ease-in;
+}
+
+/* --- special tiny mobile changes --- */
+@media only screen and (max-width: 450px)
+{
+    .nav-links
+    {
+        top: $nav-size;
+        left: 0;
+        width: 100%;
+        height: 70vh;
+        border-radius: 0;
+        border-bottom-right-radius: 15px;
+        border: 0px solid transparent;
+        border-bottom: 4px solid $off-white;
+    }
+    .nav-active
+    {
+        border-radius: 0;
+        transform: translateX(0%);
+    }
+    header h1
+    {
+        font-size: 150%;
+    }
+
+    header h2
+    {
+        font-size: 115%;
+    }
+}
+
+/* --- menu slides from the side --- */
+@keyframes navLinkFade {
+    from
+    {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* --- animation of nav menu burger --- */
+.toggle .menu-top
+{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .menu-middle
+{
+    opacity: 0;
+}
+.toggle .menu-bottom
+{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+
+/* ------------------------------ main ------------------------------ */
+main,
+.main-medium
+{
+    display: none;
+}
+
+.main-small
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+    .main-content
+    {
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 20px;
+        border: 4px solid $off-white;
+        h2,
+        h3
+        {
+            padding: 0;
+            margin: 0;
+        }
+        .content-picture-div
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 5px;
+            .content-text
+            {
+                width: 100%;
+                padding: 5px;
+                h3
+                {
+                    color: #505050;
+                    font-size: 130%;
+                    border-bottom: 2px solid #505050;
+                }
+                p
+                {
+                    text-align: justify;
+                    color: #505050;
+                    padding-top: 10px;
+                }
+            }
+            .content-pic
+            {
+                width: 100%;
+                img
+                {
+                    width: 100%; 
+                    height: auto;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
+
+/* --------------- slider-section --------------- */
+
+
+/* --------------- card-section --------------- */
+
+
+/* --------------- footer --------------- */
+footer div
+{
+    padding: 0 10px
+}

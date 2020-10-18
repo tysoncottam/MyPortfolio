@@ -1,0 +1,26 @@
+/* --------------- colors --------------- */
+$cottam-color: #c6faf1;
+$white-color: #fff;
+$website-theme: #6cab93;
+/*$secondary-website-theme: #c02626;*/
+/*$off-white: #f8f8f8;*/
+$off-white: #eee;
+
+
+/* --------------- paddings --------------- */
+$padding-break: 1rem;
+$nav-size: 200px;
+$break-gutter: 1rem 2%;
+$nav-padding: 18.5px 29px;
+
+/* --------------- other --------------- */
+$standard-font-size: 16px;
+$max-width: 64rem;
+
+/* --------------- imports --------------- */
+@import "normalize";
+@import "large";
+@media only screen and (max-width: 64rem)
+{ @import "medium"; }
+@media only screen and (max-width: 48rem)
+{ @import "small"; }

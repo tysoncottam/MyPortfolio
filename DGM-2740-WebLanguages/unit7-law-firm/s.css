@@ -1,0 +1,239 @@
+/* --------------- SASS --------------- */
+@for $i from 1 through 12 {
+    $w:(($i/12)-0.02)*100%;
+    .Msmall-#{$i}{flex-basis: $w;}
+}
+@for $i from 1 through 12 {
+    $w:($i/12)*100%;
+    .small-#{$i}{flex-basis: $w;}
+}
+
+/* --------------- html & body --------------- */
+
+
+/* --------------- body --------------- */
+
+
+/* --------------- mixed --------------- */
+
+
+/* --------------- header --------------- */
+header
+{
+    justify-content: center;
+    text-align: center;
+}
+
+header input
+{
+    width: 150px;
+}
+
+/* --------------- nav --------------- */
+nav
+{
+    background-color: $secondary-website-theme;
+    justify-content: space-between;
+    padding: 0px 15px;
+}
+
+.nav-links
+{
+    position: absolute;
+    left: 0px;
+    height: 65vh;
+    min-height: 400px;
+    top: $nav-size;
+    display: flex;
+    background-color: $secondary-website-theme;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(-100%);
+    justify-content: space-between;
+}
+
+.nav-links a
+{
+    border-bottom: 3px solid transparent;
+    padding: 0;
+}
+
+.first-li
+{
+    padding-top: 50px;
+}
+
+.last-li
+{
+    padding-bottom: 30px;
+}
+
+.nav-links a:after
+{
+    text-decoration: none;
+    content: ""; 
+    display: block; 
+    margin: 0 auto; 
+    width: 70%; 
+    padding-top: 4px; 
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+.nav-links a:hover:after
+{
+    border-bottom: 2.5px solid #fff;
+}
+
+nav a:hover,
+nav li.active
+{
+    background-color: $secondary-website-theme;
+}
+
+.nav-links li
+{
+    opacity: 0;
+}
+
+.nav-links a
+{
+    font-size: 115%;
+}
+.menu
+{
+    display: block;
+    cursor: pointer;
+    z-index: 2;
+    margin-right: 15px;
+}
+
+.menu div
+{
+    width: 27px;
+    height: 3px;
+    background-color: $off-white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-break
+{
+    display: none;
+}
+
+/* --- search text fields --- */ 
+.search-1
+{
+    display: none;
+}
+
+.search-2
+{
+    display: block;
+    width: 100%;
+}
+
+.search-2 input
+{
+    display: flex;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    position: relative;
+    z-index: 2;
+}
+
+.nav-active
+{
+    transform: translateX(0%);  
+    padding: 0;
+    border-bottom-right-radius: 15px;
+    transition: transform 0.5s ease-in;
+}
+
+/* --- menu slides from the side --- */ 
+@keyframes navLinkFade {
+    from 
+    {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to 
+    {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* --- animation of nav menu burger --- */ 
+.toggle .menu-top
+{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .menu-middle
+{
+    opacity: 0;
+}
+.toggle .menu-bottom
+{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* --- special tiny mobile changes --- */
+@media only screen and (max-width: 450px)
+{ 
+    .nav-links
+    {
+        width: 100%;   
+    }
+    .nav-active
+    {
+        border-radius: 0;
+    }
+    header h1
+    {
+        font-size: 150%;
+    }
+
+    header h2
+    {
+        font-size: 115%;
+    }
+}
+
+/* ------------------------------ main ------------------------------ */
+
+
+/* --------------- lawyers --------------- */
+
+
+/* --------------- cta --------------- */
+.cta 
+{
+    width: 100vw;
+    margin: 30px 0px 30px 0px;
+    justify-content: center;
+}
+
+/* --------------- blogs --------------- */
+
+
+/* --------------- tip-faq --------------- */
+.tip-faq 
+{
+  justify-content: center;
+}
+
+/* --------------- footer --------------- */
+.social-links
+{
+    margin: 0;
+    padding: 0;
+}
+
+.social-links li 
+{
+    width: 50px;
+}

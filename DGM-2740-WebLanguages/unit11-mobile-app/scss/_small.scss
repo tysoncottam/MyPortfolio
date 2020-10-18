@@ -1,0 +1,98 @@
+
+/* --------------- SASS --------------- */
+@for $i from 1 through 12 {
+    $w:(($i/12)-0.02)*100%;
+    .Msmall-#{$i}{flex-basis: $w;}
+}
+@for $i from 1 through 12 {
+    $w:($i/12)*100%;
+    .small-#{$i}{flex-basis: $w;}
+}
+
+/* --------------- html & body --------------- */
+
+
+/* --------------- body --------------- */
+
+
+/* --------------- mixed --------------- */
+
+
+/* --------------- header --------------- */
+header
+{
+    justify-content: center;
+    text-align: center;
+}
+
+header input
+{
+    width: 150px;
+}
+
+.header-1
+{
+    align-items: center;
+}
+
+
+/* --------------- nav --------------- */
+
+.nav-links
+{
+    width: 100%;
+    div
+    {
+        width: 33% !important;
+        text-align: center;
+        li
+        {
+            /*
+            font-size: 70%;
+            padding-top: 0px;
+            padding-bottom: 8px;
+            */
+            display: none;
+        }
+        i
+        {
+            font-size: 250% !important;
+            padding: 5px;
+        }
+    }
+}
+
+
+/* ------------------------------ main ------------------------------ */
+main h2
+{
+    font-size: 100%;
+}
+
+main h3
+{
+    font-size: 80%;
+}
+
+/* --------------- first-section --------------- */
+
+
+/* --------------- second-section --------------- */
+.second-section
+{
+    div
+    {
+        padding: 10px 2px;
+    }
+}
+
+i
+{
+    font-size: 150% !important;
+}
+
+/* --------------- footer --------------- */
+footer div
+{
+    padding: 0 10px
+}

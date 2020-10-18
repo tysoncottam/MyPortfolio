@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<!------------------------------ head ------------------------------>
+    <head>
+        <!--------------- metas --------------->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Unit 2 Assignment">
+        <meta name="author" content="Tyson Cottam">
+
+        <!--------------- styles --------------->
+        <link href="css/styles.css" rel="stylesheet">
+        <link href="#" rel="shortcut icon" >
+        <link href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" rel="stylesheet">
+
+        <!--------------- google fonts --------------->   
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap" rel="stylesheet">
+        
+        <!--------------- title --------------->
+        <title>Senators Project</title>
+    </head>
+    
+<!------------------------------ body ------------------------------>
+    <body>
+        <section class="header-section">
+            <div class="header-section-container">
+                <a href="https://tysoncottam.netlify.com/"><h1>Senators</h1></a> 
+            </div>
+        </section>
+        
+        <section class="dropdown-section">
+            <div class="dropdown-section-container">
+                <select class="senator" name="select">
+                    <option value="">Find Senators…</option>
+                    <option value="All Senators">All Senators</option>
+                    <option value="All Senators By Age">All Senators By Age</option>
+                    <option value="Democrats">Democrats</option>
+                    <option value="Republicans">Republicans</option>
+                    <option value="Utah Senators">Utah Senators</option>
+                </select>
+                <div class="filter-display"></div>
+                <div class="votes-display"></div>
+            </div>
+        </section>
+
+        <!--------------- main --------------->
+        <main>
+          <section class="card-section">
+            <div class="card-section-container"></div>
+          </section>
+        </main>
+
+        <!--------------- footer --------------->    
+        <script src="js/main.js"></script>
+    </body>
+</html>

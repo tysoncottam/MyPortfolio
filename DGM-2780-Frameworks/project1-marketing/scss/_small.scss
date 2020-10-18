@@ -1,0 +1,160 @@
+/* --------------- SASS --------------- */
+@for $i from 1 through 12 {
+    $w:(($i/12)-0.02)*100%;
+    .Msmall-#{$i}{flex-basis: $w;}
+}
+@for $i from 1 through 12 {
+    $w:($i/12)*100%;
+    .small-#{$i}{flex-basis: $w;}
+}
+
+/* --------------- html & body --------------- */
+
+
+/* --------------- body --------------- */
+
+
+/* --------------- mixed --------------- */
+
+
+/* --------------- header --------------- */
+
+.header-nav-wrapper .header-container,
+.header-nav-wrapper .nav-menu
+{
+    margin: 5px;
+    padding: 5px;
+}
+
+.part-one h1,
+.part-two h1
+{
+    font-size: 175% !important;
+}
+
+.part-one h3
+{
+    font-size: 135% !important;
+}
+
+.hero-section
+{
+    height: 100%;
+}
+
+.hero-section .hero-text .hero-text-part-one
+{
+    padding: 5px;
+}
+
+.hero-section .hero-text .hero-text-part-one,
+.hero-section .hero-text .hero-text-part-two
+{
+    padding: 5px;
+    width: 50%;
+}
+
+.hero-section .hero-text .hero-text-part-one h2, .hero-section .hero-text .hero-text-part-two h2
+{
+    font-size: 130% !important;
+}
+
+.hero-section .hero-text .hero-text-part-one h2, 
+.hero-section .hero-text .hero-text-part-two h3,
+.special-symbol
+{
+    font-size: 130% !important;
+}
+
+.hero-section .hero-text .hero-text-part-two h3
+{
+    font-size: 100% !important;
+}
+
+.hero-section .hero-text
+{
+    width: 100%;
+}
+
+/* --------------- main-section --------------- */
+.relax-section .relax-container .relax-pic-box,
+.relax-section .relax-container .relax-info-box
+{
+    width: 90% !important;
+}
+
+.photo-gallery div p
+{
+    width: 90% !important;
+    text-align: center;
+}
+
+.video-section
+{
+    height: 80%;
+    div
+    {
+        width: 100%;
+        height: 75%;
+    }
+}
+
+.picture-reveal-details h3
+{
+    font-size: 130% !important;
+}
+.social-data p,
+.social-data i
+{
+    font-size: 130% !important;
+}
+
+@media only screen and (max-width: 550px)
+{
+    .picture-reveal-details h3
+    {
+        font-size: 80% !important;
+    }
+    .social-data p,
+    .social-data i
+    {
+        font-size: 80% !important;
+    }
+}
+
+@media only screen and (max-width: 430px)
+{
+    .part-one h1,
+    .part-two h1
+    {
+        font-size: 140% !important;
+    }
+    .part-one h3
+    {
+        font-size: 120% !important;
+    }
+    .testimony-section
+    {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 400px)
+{
+    .header-nav-wrapper
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+.subscribe-form .email-entry
+{
+    width: 100% !important;
+}
+
+.footer-section .footer-container .subscribe-form .submit-button-form
+{
+    width: 100%;
+}

@@ -1,0 +1,43 @@
+nav ul
+{
+    display: flex;
+    justify-content: center;
+}
+nav li
+{
+    float: left;
+    width: $one-forth;
+    border-right: 2px solid rgba(238, 238, 238, 0.5);
+}
+
+nav li:last-child
+{
+    border-right: 2px solid transparent;
+}
+
+nav a
+{
+    font-size: 90%;
+}
+
+main div
+{
+    flex-basis: 33%;
+}
+main h2
+{
+    font-size: 120%;
+}
+
+.card h3
+{
+    margin: 5px 0;
+    padding: 0;
+    padding-top: 10px;
+    font-size: 110%;
+}
+
+.card-back h3
+{
+    padding: 0;
+}

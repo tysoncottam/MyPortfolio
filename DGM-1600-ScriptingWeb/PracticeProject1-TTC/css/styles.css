@@ -1,0 +1,173 @@
+/* ----- apply all ----- */
+*
+{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+/* ----- body rules ----- */
+body
+{
+    color: #bdefe6;
+}
+
+nav, 
+main, 
+.row,
+.bottom-details,
+footer
+{
+    max-width: 960px;
+    margin: auto;
+}
+
+/* ----- header rules ----- */
+.hf-wrapper
+{
+    width: 100%;
+    background-color: #a5a5a5;
+}
+
+header
+{
+    background-color: #a5a5a5;
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 575px;
+    text-align: right;
+}
+
+header img
+{
+    width: 100px;
+    height: auto;
+    float: left;
+    border-radius: 50%;
+    border: 2px solid #bdefe6;
+}
+
+header h1
+{
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-top: 30px;
+    color: #bdefe6;
+}
+
+/* ----- main ----- */
+main,
+.bottom-details,
+.row
+{
+    padding: 1rem 2%;
+    display: block;
+}
+
+main h1,
+main h2,
+main h3
+{
+    color: #a5a5a5; 
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+}
+
+main img
+{
+    width: 200px;
+    height: auto;
+    border: 4px solid #a5a5a5;
+    border-radius: 10%;
+    float: left;
+    margin-right: 25px;
+}
+
+main h3
+{
+    float: right;
+}
+
+main p,
+main ul li
+{
+    color: #bdefe6;
+}
+
+.profile-details
+{
+    background-color: #a5a5a5;
+    margin-left: 225px;
+    margin-top: 23px;
+    padding: 6px 10px;
+}
+
+/* ----- section cards ----- */
+section img
+{
+    width: auto;
+    height: 195px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.card-layouts
+{
+    height: 200px;
+}
+
+.card-layouts p
+{
+    background-color: rgba(36, 36, 36, 0.7);
+    position: relative;
+    bottom: 50px;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+
+/* ----- bottom-details ----- */
+
+.bottom-details h2
+{
+    color: #a5a5a5; 
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.bottom-info
+{
+    background-color: #a5a5a5;
+    padding: 6px 10px 20px 20px;
+}
+
+/* ----- footer ----- */
+footer
+{
+    text-align: center;
+    padding: 1rem 2%;
+    background-color: #a5a5a5;
+    color: #bdefe6;
+}
+
+/* ----- clear fix ----- */
+.clearfix:after
+{
+    content: "";
+    display: block;
+    clear: both;
+}

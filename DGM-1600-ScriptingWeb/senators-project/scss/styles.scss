@@ -1,0 +1,28 @@
+/* --------------- colors --------------- */
+$cottam-color: #3db8a6;
+$white-color: #fff;
+$website-theme: #ffda33;
+$off-white: #eee;
+$dark-grey: #525252;
+
+/* --------------- paddings --------------- */
+$padding-break: 1rem;
+$gutter: 2vw;
+$break-gutter: 1rem 2%;
+$large-nav-padding: .5rem 1rem;
+$nav-padding: .8rem 0; /* 44px Apple Recommended */
+
+/* --------------- width --------------- */
+$one-forth: 25%;
+
+/* --------------- other --------------- */
+$standard-font-size: 16px;
+$max-width: 80rem;
+
+/* --------------- imports --------------- */
+@import "normalize";
+@import "small";
+@media only screen and (min-width: 50rem)
+{ @import "medium"; }
+@media only screen and (min-width: 80rem)
+{ @import "large"; }

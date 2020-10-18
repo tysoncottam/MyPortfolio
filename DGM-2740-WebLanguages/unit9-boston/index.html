@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<!------------------------------ head ------------------------------>
+    <head>
+        <!--------------- metas --------------->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Unit 2 Assignment">
+        <meta name="author" content="Tyson Cottam">
+
+        <!--------------- styles --------------->
+        <link href="css/styles.css" rel="stylesheet">
+        <link rel="shortcut icon" href="#">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+        <!--------------- google fonts --------------->
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+        <!--------------- title --------------->
+        <title>Boston Website</title>
+    </head>
+
+<!------------------------------ body ------------------------------>
+    <body>
+        <!--------------- header --------------->
+        <div class="header-wrapper">
+            <header>
+                <div class="header-1">
+                    <h1>BOSTON</h1>
+                    <h2>"It's All Here"</h2>
+                </div>
+                <div class="search-1">
+                    <input type="text" placeholder="Search...">
+                </div>
+            </header>
+        </div>
+
+        <!--------------- nav --------------->
+        <div class="nav-wrapper">
+            <nav>
+                <div class="menu">
+                    <div class="menu-top"></div>
+                    <div class="menu-middle"></div>
+                    <div class="menu-bottom"></div>
+                </div>
+                <ul class="nav-links">
+                    <li class="inactive" id="first-li"><a href="https://tysoncottam.github.io/">Departments</a></li>
+                    <li class="active"><a href="#">Visit</a></li>
+                    <li class="inactive"><a href="#">Services</a></li>
+                    <li class="inactive"><a href="https://tysoncottam.github.io/">Pay Bills</a></li>
+                    <li class="inactive"><a href="#">Meetings</a></li>
+                    <li class="inactive" id="last-li"><a href="#">Help</a></li>
+                </ul>
+                <div class="search-2">
+                    <input type="text" placeholder="Search...">
+                </div>
+            </nav>
+        </div>
+
+        <!--------------- main --------------->
+        <main class="clearfix">
+        <section class="slider-section">
+            <div class="large-12">
+                <picture>
+                    <source srcset="images/slider1.jpg" media="(min-width: 64rem)">
+                    <source srcset="images/slider1-med.jpg" media="(min-width: 48rem)">
+                    <source srcset="images/slider1.jpg" media="(max-width: 48rem)">
+                    <img src="images/slider1-dead.jpg" alt="slider1">
+                    <div>
+                        <p>Boston City Overview</p>
+                    </div>
+                </picture>
+            </div>
+            <div class="large-12">
+                <picture>
+                    <source srcset="images/slider2.jpg" media="(min-width: 64rem)">
+                    <source srcset="images/slider2-med.jpg" media="(min-width: 48rem)">
+                    <source srcset="images/slider2.jpg" media="(max-width: 48rem)">
+                    <img src="images/slider2-dead.jpg" alt="slider2">
+                    <div>
+                        <p>One International Place</p>
+                    </div>
+                </picture>
+            </div>
+            <div class="large-12">
+                <picture>
+                    <source srcset="images/slider3.jpg" media="(min-width: 64rem)">
+                    <source srcset="images/slider3-med.jpg" media="(min-width: 48rem)">
+                    <source srcset="images/slider3.jpg" media="(max-width: 48rem)">
+                    <img src="images/slider3-dead.jpg" alt="slider3">
+                    <div>
+                        <p>Avenir Town Homes</p>
+                    </div>
+                </picture>
+            </div>
+            <div class="large-12">
+                <picture>
+                    <source srcset="images/slider4.jpg" media="(min-width: 64rem)">
+                    <source srcset="images/slider4-med.jpg" media="(min-width: 48rem)">
+                    <source srcset="images/slider4.jpg" media="(max-width: 48rem)">
+                    <img src="images/slider4-dead.jpg" alt="slider4">
+                    <div>
+                        <p>Memorial Drive</p>
+                    </div>
+                </picture>
+            </div>
+            <div class="large-12">
+                <picture>
+                    <source srcset="images/slider5.jpg" media="(min-width: 64rem)">
+                    <source srcset="images/slider5-med.jpg" media="(min-width: 48rem)">
+                    <source srcset="images/slider5.jpg" media="(max-width: 48rem)">
+                    <img src="images/slider5-dead.jpg" alt="slider5">
+                    <div>
+                        <p>Prudential Center</p>
+                    </div>
+                </picture>
+            </div>
+            <div class="large-12">
+                <picture>
+                    <source srcset="images/slider6.jpg" media="(min-width: 64rem)">
+                    <source srcset="images/slider6-med.jpg" media="(min-width: 48rem)">
+                    <source srcset="images/slider6.jpg" media="(max-width: 48rem)">
+                    <img src="images/slider6-dead.jpg" alt="slider6">
+                    <div>
+                        <p>Bar Mezzana</p>
+                    </div>
+                </picture>
+            </div>
+        </section>
+        <section class="message-section">
+            <div>
+                <h2>Plan your visit!</h3>
+            </div>
+        </section>
+        <section class="card-section">
+            <div class="large-3 medium-6 small-12">
+                    <img src="images/boston2.jpg" alt="boston2">
+                    <a href="https://tysoncottam.com/"><div class="card-cover card1"></div></a>
+                    <i class="ion-ios-home icon-home"></i>
+                    <p>Homes</p>
+            </div>
+            <div class="large-3 medium-6 small-12">
+                    <img src="images/boston1.jpg" alt="boston1">
+                    <a href="https://tysoncottam.github.io/"><div class="card-cover card2"></div></a>
+                    <i class="ion-ios-moon icon-moon"></i>
+                    <p>Night</p>
+            </div>
+            <div class="large-3 medium-6 small-12">
+                    <img src="images/boston3.jpg" alt="boston3">
+                    <a href="https://tysoncottam1.netlify.com/"><div class="card-cover card3"></div></a>
+                    <i class="ion-ios-partlysunny icon-parks"></i>
+                    <p>Parks</p>
+            </div>
+            <div class="large-3 medium-6 small-12">
+                    <img src="images/boston4.jpg" alt="boston4">
+                    <a href="https://github.com/tysoncottam"><div class="card-cover card4"></div></a>
+                    <i class="ion-android-restaurant icon-city"></i>
+                    <p>City</p>
+            </div>
+        </section>
+    </main>
+
+        <!--------------- footer --------------->
+        <div class="footer-wrapper">
+            <footer>
+                <div>
+                    &copy; 2019 Tyson Cottam
+                </div>
+                <div>
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com/"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="https://www.twitch.tv/"><i class="ion-social-twitch"></i></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+        <script src="js/app.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script type="text/javascript">
+            $('.slider-section').slick({
+                dots: true,
+                arrows: false
+            });
+        </script>
+    </body>
+</html>

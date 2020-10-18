@@ -1,0 +1,156 @@
+/* ----- apply all ----- */
+*
+{
+    box-sizing: border-box;
+}
+
+/* ----- body rules ----- */
+body
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+/* ----- header rules ----- */
+.hf-wrapper
+{
+    width: 100%;
+    background-color: #1c92c3;
+}
+
+header
+{
+    background-color: #1c92c3;
+    padding: 1rem 2%;
+    color: #eee;
+    font-weight: 400;
+}
+
+.logo-science
+{
+    width: 100px;
+    height: auto;
+    float: left;
+    margin-right: 15px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+header h1
+{
+    margin: 0;
+    padding-top: 35px;
+    font-size: 1.5em;
+}
+
+header h2
+{
+    margin: 0;
+    display: none;
+}
+
+/* ----- nav rules ----- */
+.nav-wrapper
+{
+    width: 100%;
+    background-color: #111;
+}
+
+nav
+{
+    background-color: #111;
+    font-weight: 300;
+}
+
+nav ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+nav li
+{
+    list-style-type: none;
+}
+
+nav li.active
+{
+    background-color: #444;
+}
+
+nav a
+{
+    display: block;
+    padding: .8rem 0; /* 44px Apple Recommended */
+    color: #eee;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    background-color: #717171;
+}
+
+
+/* ----- hero-section ----- */
+
+.hero-section
+{
+    width: 100%;
+    margin: 0;
+}
+
+.hero-section img
+{
+    width: 100%;
+}
+
+/* ----- main ----- */
+main
+{
+    padding: 1rem 2%;
+    display: block;
+    font-weight: 300;
+}
+
+main h2
+{
+    color: #17a8e4; 
+    margin: 0;
+}
+
+main figure
+{
+    width: 100%;
+    margin: 0;
+}
+
+main figure img
+{
+    width: 100%;
+    margin-top: 16px;
+}
+
+main p
+{
+    text-align: justify;
+}
+
+/* ----- footer ----- */
+footer
+{
+    text-align: center;
+    padding: 1rem 2%;
+    background-color: #1c92c3;
+    color: #eee;
+    font-weight: 400;
+}
+
+/* ----- clear fix ----- */
+.clearfix:after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
