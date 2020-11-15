@@ -1,24 +1,507 @@
 /* --------------- colors --------------- */
-$cottam-color: #c6faf1;
-$white-color: #fff;
-$website-theme: #00cec9;
-$secondary-website-theme: #74b9ff;
-$off-white: #eee;
-$grey-color: #b2b2b2;
-$dark-grey-color: #575757;
+$dark-grey-color: #707070;
+$light-grey-color: #DADADA;
+$mid-grey-color: #cccccc;
+$exception-grey-color: #bfbfbf;
+
+$dark-mint-color: #73BCB2;
+$dark-blue-color: #73A8BC;
+$red-color: #CC7C7C;
+$mustard-color: #DBAB26;
 
 /* --------------- paddings --------------- */
-$padding-break: 1rem;
-$nav-size: 200px;
-$break-gutter: 1rem 2%;
-$nav-padding: 18.5px 29px;
+
 
 /* --------------- other --------------- */
 $standard-font-size: 16px;
-$max-width: 80rem;
+$max-width: 1600px;
 
-$nav-height: calc(100vh - 63px);
+/* --------------- mixin --------------- */
+/* ------ flex ------ */
+@mixin flex-col
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
+@mixin flex-row
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* ------ special items ------ */
+@mixin box-shadow-default
+{
+    box-shadow: 40px 40px 80px rgba(0, 0, 0, 0.16);
+}
+
+/* ------ nav footer ------ */
+@mixin nav-footer-default
+{
+    @include flex-row;
+//    max-height: 80px;
+//    min-height: 80px;
+}
+
+/* ------ buttons ------ */
+@mixin icon-button-default
+{
+    width: 100%;
+    opacity: 0;
+    padding: 0 2px;
+    transition: opacity 0.3s;
+    cursor: pointer;
+    &:hover
+    {
+        opacity: 1;
+    }
+}
+
+@mixin arrow-down-default
+{
+    width: 72px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: -36px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    cursor: pointer;
+    border-radius: 50%;
+    &:hover
+    {
+        opacity: 1;
+    }
+}
+
+@mixin icon-magic
+{
+    @include flex-row;
+    position: absolute;
+    bottom: 75px;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    .icon-boxes
+    {
+        @include flex-row;
+        padding: 0;
+        position: relative;
+        width: 100%;
+        height: auto;
+        .background-icon
+        {
+            @include flex-row;
+            img
+            {
+                width: 100%;
+                padding: 0 2px;
+                cursor: pointer;
+            }
+        }
+        .color-icon
+        {
+            @include flex-row;
+            position: absolute;
+            top: 0;
+            a
+            {
+                #green-icon,
+                #red-icon,
+                #blue-icon,
+                #mustard-icon
+                {
+                    @include icon-button-default;
+                }
+            }
+        }
+    }
+}
+
+/* ------ h1 details ------ */
+@mixin h1-default
+{
+    font-weight: 100;
+    font-size: 80px;
+    color: #fff;
+    letter-spacing: 20px;
+    margin: 136px 0 100px 0;
+    padding: 0px;
+}
+
+/* ------ h2 details ------ */
+@mixin h2-default
+{
+    font-weight: 300;
+    font-size: 25px;
+    color: $dark-grey-color;
+    letter-spacing: 10px;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 0;
+    text-align: center;
+}
+
+/* ------ h3 details ------ */
+@mixin h3-default
+{
+    font-weight: 200;
+    font-size: 18px;
+    color: $dark-grey-color;
+    letter-spacing: 5px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0;
+    text-align: center;
+    line-height: 30px;
+}
+
+/* ------ h4 details ------ */
+@mixin h4-default
+{
+    font-weight: 400;
+    font-size: 10px;
+    color: $exception-grey-color;
+    margin: 0 auto;
+    margin-top: 4px;
+    padding: 0;
+    text-align: center;
+}
+
+/* ------ project defaults ------ */
+@mixin project-show-default
+{
+    @include flex-row;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 150px;
+    padding: 0;
+}
+
+@mixin project-display-default
+{
+    @include flex-row;
+    background-color: #fff;
+    width: 100%;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    border: 5px solid $light-grey-color;
+}
+
+@mixin text-display-default
+{
+    @include flex-row;
+    background-color: yellow;
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+@mixin section-default
+{
+    @include flex-col;
+    .ux-ui-section,
+    .website-section
+    {
+        @include flex-col;
+        align-items: flex-start;
+        max-width: $max-width;
+        min-width: $max-width;
+        margin: 0 auto;
+        .head1-box
+        {
+            @include flex-row;
+            justify-content: flex-start;
+            width: 100%;
+            h1
+            {
+                @include h1-default;
+            }
+        }
+        .project-show-1
+        {
+            @include project-show-default;
+            .project-display
+            {
+                @include project-display-default;
+            }
+            .text-display
+            {
+                @include text-display-default;
+                margin-left: -160px;
+            }
+        }
+        .project-show-2
+        {
+            @include project-show-default;
+            justify-content: flex-end;
+            align-items: flex-end;
+            .project-display
+            {
+                @include project-display-default;
+            }
+            .text-display
+            {
+                @include text-display-default;
+                margin-right: -160px;
+            }
+        }
+        .project-show-3
+        {
+            @include project-show-default;
+            justify-content: center;
+            .project-display
+            {
+                @include project-display-default;
+            }
+            .text-display
+            {
+                @include text-display-default;
+                margin-left: -160px;
+            }
+        }
+        .project-show-4
+        {
+            @include project-show-default;
+            justify-content: flex-end;
+            align-items: flex-start;
+            .project-display
+            {
+                @include project-display-default;
+            }
+            .text-display
+            {
+                @include text-display-default;
+                margin-right: -160px;
+            }
+        }
+        .project-show-5
+        {
+            @include project-show-default;
+            justify-content: center;
+            .project-display
+            {
+                @include project-display-default;
+            }
+            .text-display
+            {
+                @include text-display-default;
+                margin-right: -160px;
+            }
+        }
+        .project-show-6
+        {
+            @include project-show-default;
+            align-items: flex-end;
+            .project-display
+            {
+                @include project-display-default;
+            }
+            .text-display
+            {
+                @include text-display-default;
+                margin-left: -160px;
+            }
+        }
+        .project-show-7
+        {
+            @include project-show-default;
+            justify-content: flex-end;
+            .project-display
+            {
+                @include project-display-default;
+            }
+            .text-display
+            {
+                @include text-display-default;
+                margin-right: -160px;
+            }
+        }
+    }
+}
+
+/* ------ special card magic ------ */
+@mixin project-spacing-default
+{
+    .project-display
+            {
+                @include flex-row;
+                @include box-shadow-default;
+                img
+                {
+                    width: 100%;
+                    height: 100%;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+            .text-display
+            {
+                @include flex-row;
+                justify-content: flex-start;
+                align-content: space-between;
+                background-color:  $dark-blue-color;
+                padding: 50px;
+                opacity: 95%;
+                @include box-shadow-default;
+                .text-title
+                {
+                    h2
+                    {
+                        color: #fff;
+                        padding: 0;
+                        margin: 0;
+                        font-size: 40px;
+                        font-weight: 400;
+                        margin-bottom: 20px;
+                    }
+                }
+                .text-details
+                {
+                    h3
+                    {
+                        color: #fff;
+                        padding: 0;
+                        margin: 0;
+                        font-size: 30px;
+                        font-weight: 300;
+                        height: 170px;
+                    }
+                }
+                .text-learn-more
+                { 
+                    width: 100%;
+                    @include flex-row;
+                    justify-content: flex-end;
+                    a
+                    {
+                        text-decoration: none;
+                        transition: all 0.3s;
+                        padding: 10px 0px;
+                        border: 3px solid transparent;
+                        .learn-more-div
+                        {
+                            @include flex-row;
+                            width: 100%;
+                            .learn-more-title
+                            {
+                                @include flex-row;
+                                height: auto;
+                                padding: 0;
+                                margin: 0;
+                                h3
+                                {
+                                    color: #fff;
+                                    padding: 0;
+                                    margin: 0;
+                                    font-size: 30px;
+                                    font-weight: 300;
+                                    padding: 0 10px 0 20px;
+                                }
+                            }
+                            .learn-more-icon
+                            {
+                                @include flex-row;
+                                height: auto;
+                                padding: 0;
+                                margin: 0;
+                                img
+                                {
+                                    width: 100%;
+                                    height: 40px;
+                                    width: auto;
+                                    padding: 0 20px 0 10px;
+                                }
+                            }
+                        }
+                        &:hover
+                        {
+                            background-color: $dark-blue-color;
+                            box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.25);
+                            border: 3px solid #fff;
+                        }
+                    }
+                }
+            }
+}
+
+/* ------ special card magic colors ------ */
+
+@mixin project-background-mint
+{
+    @include project-spacing-default;
+    .text-display
+    {
+        background-color: $dark-mint-color;
+        .text-learn-more a:hover
+        {
+            background-color: $dark-mint-color;
+        }
+    }
+}
+
+@mixin project-background-blue
+{
+    @include project-spacing-default;
+    .text-display
+    {
+        background-color: $dark-blue-color;
+        .text-learn-more a:hover
+        {
+            background-color: $dark-blue-color;
+        }
+    }
+}
+
+@mixin project-background-red
+{
+    @include project-spacing-default;
+    .text-display
+    {
+        background-color: $red-color;
+        .text-learn-more a:hover
+        {
+            background-color: $red-color;
+        }
+    }
+}
+
+@mixin project-background-mustard
+{
+    @include project-spacing-default;
+    .text-display
+    {
+        background-color: $mustard-color;
+        .text-learn-more a:hover
+        {
+            background-color: $mustard-color;
+        }
+    }
+}
+
+@mixin project-background-grey
+{
+    @include project-spacing-default;
+    .text-display
+    {
+        background-color: $dark-grey-color;
+        .text-learn-more a:hover
+        {
+            background-color: $dark-grey-color;
+        }
+    }
+}
 
 /* --------------- imports --------------- */
 @import "normalize";

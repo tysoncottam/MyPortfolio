@@ -5,17 +5,14 @@
         <!--------------- metas --------------->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta name="description" content="Unit 2 Assignment">
+        <meta name="description" content="My Portfolio">
         <meta name="author" content="Tyson Cottam">
 
         <!--------------- styles --------------->
         <link href="/PORTFOLIO/css/styles.css" rel="stylesheet">
         <link rel="shortcut icon" href="#">
 
-        <!--------------- google fonts --------------->
-        <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
-
+        <!--------------- ionicons --------------->
         <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
         <!--------------- title --------------->
@@ -25,314 +22,330 @@
 <!------------------------------ body ------------------------------>
     <body>
         <!--------------- header --------------->
-        <div class="header-wrapper">
-            <header>
-
-            </header>
-        </div>
-
-        <!--------------- nav --------------->
-        <div class="nav-wrapper">
-            <nav>
-                <div class="menu">
-                    <div class="menu-top"></div>
-                    <div class="menu-middle"></div>
-                    <div class="menu-bottom"></div>
-                </div>
-                <ul class="nav-links" id="navbar">
-                    <li id="first-li"><a href="#projects-section" class="projects-button">Projects</a></li>
-                    <div id="first-breaker" class="nav-breakers"></div>
-                    <li id="second-li"><a href="https://www.linkedin.com/in/tysoncottam">Bio</a></li>
-                    <div id="second-breaker" class="nav-breakers"></div>
-                    <li id="third-li"><a href="https://www.facebook.com/cottamtyson">Interests</a></li>
-                    <div id="last-breaker" class="nav-breakers"></div>
-                    <li id="last-li"><a href="PORTFOLIO/TysonCottam-Resume.pdf" download>Resume</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <!--------------- main large --------------->
-        <section class="main-page">
-                <div class="user-information">
-                    <img src="PORTFOLIO/images/tyson-pic-profile.jpg" alt="tyson-profile pic">
-                    <h1>Hi, I'm Tyson.</h1>
-                    <h2>UX/UI Designer, Father, Hoodie Enthusiast</h2>
-                </div>
-                <div class="projects-button-area">
-                    <a href="#projects-section"><i class="ion-chevron-down icon-big"></i></a>
-                </div>
-        </section>
         
-        <main id="projects-section">
-            <section class="projects-section">
-                <div class="projects-heading">
-                    <div class="large-9">
-                        <h1>Projects:</h1>
+        <!--------------- nav --------------->
+        <div class="large-12 nav-bar">
+            <div class="hamburger-nav-box">
+                <div class="nav-top-bar"></div>
+                <div class="nav-middle-bar"></div>
+                <div class="nav-bottom-bar"></div>
+            </div>
+        </div>
+
+        <!--------------- main --------------->
+        <main>
+            <div class="large-12 hero-image">
+                <div class="profile-box">
+                    <div class="style-profile-line"></div>
+                    <div class="style-profile-line box-white"></div>
+                    <div class="profile-picture-circle"></div>
+                    <div class="profile-text">
+                        <h2>TYSON COTTAM</h2>
+                        <h3>UX/UI DESIGNER, FATHER, <br>HOODIE ENTHUSIAST </h3>
                     </div>
-                </div>
-                <div class="projects-section-containter">
-                    <div class="large-4 medium-6 small-12 projects-card">
-                        <div class="card-info">
-                            <div>
-                                <h1>Project #1: Omnifood</h1>
+                    <div class="profile-icon-box">
+                        <div class="large-2 icon-boxes">
+                            <div class="background-icon">
+                                <img src="./PORTFOLIO/images/ux-ui-icon.svg" alt="ux-ui icon">
                             </div>
-                            <a href="OMNIFOOD/index.html"><img src="PORTFOLIO/images/omnifood-preview.jpg" alt="omnifood-preview"></a>
-                            <h2>HTML, SCSS, JavaScript</h2>
-                        </div>
-                    </div>
-                    <div class="large-4 medium-6 small-12 projects-card">
-                        <div class="card-info">
-                            <div>
-                                <h1>Project #2: Bookstore</h1>
+                            <div class="color-icon">
+                                <a href="#ux-ui-section"><img id="green-icon" src="./PORTFOLIO/images/ux-ui-icon-green.svg" alt="ux-ui icon"></a>
                             </div>
-                            <a href="DGM-2780-Frameworks/project3-cozy/index.html"><img src="PORTFOLIO/images/cozy-preview.jpg" alt="cozy-preview"></a>
-                            <h2>HTML, SCSS, JavaScript</h2>
                         </div>
-                    </div>
-                    <div class="large-4 medium-6 small-12 projects-card">
-                        <div class="card-info">
-                            <div>
-                                <h1>Project #3: Frozen Light</h1>
+                        <div class="large-2 icon-boxes">
+                            <div class="background-icon">
+                                <img src="./PORTFOLIO/images/dev-icon.svg" alt="dev icon">
                             </div>
-                            <a href="DGM-2740-WebLanguages/unit12-frozen-light/index.html"><img src="PORTFOLIO/images/frozen-light-preview.jpg" alt="frozen-light-preview"></a>
-                            <h2>HTML, SCSS, JavaScript</h2>
-                        </div>
-                    </div>
-                    <div class="large-4 medium-6 small-12 projects-card">
-                        <div class="card-info">
-                            <div>
-                                <h1>Project #4: Pokemon API</h1>
+                            <div class="color-icon">
+                                <a href="#website-section"><img id="red-icon" src="./PORTFOLIO/images/dev-icon-red.svg" alt="dev icon red"></a>
                             </div>
-                            <a href="DGM-1600-ScriptingWeb/pokemon-project/index.html"><img src="PORTFOLIO/images/pokemon-preview.jpg" alt="pokemon-preview"></a>
-                            <h2>HTML, SCSS, JavaScript</h2>
                         </div>
-                    </div>
-                    <div class="large-4 medium-6 small-12 projects-card">
-                        <div class="card-info">
-                            <div>
-                                <h1>Project #5: Client</h1>
+                        <div class="large-2 icon-boxes">
+                            <div class="background-icon">
+                                <img src="./PORTFOLIO/images/people-icon.svg" alt="people icon">
                             </div>
-                            <a href="DGM-2740-WebLanguages/unit13-client/index.html"><img src="PORTFOLIO/images/client-preview.jpg" alt="client-preview"></a>
-                            <h2>HTML, SCSS, JavaScript</h2>
-                        </div>
-                    </div>
-                    <div class="large-4 medium-6 small-12 projects-card">
-                        <div class="card-info">
-                            <div>
-                                <h1>Project #6: Star Wars API</h1>
+                            <div class="color-icon">
+                                <a href="#"><img id="blue-icon" src="./PORTFOLIO/images/people-icon-blue.svg" alt="people icon blue"></a>
                             </div>
-                            <a href="DGM-1600-ScriptingWeb/starwars-api/index.html"><img src="PORTFOLIO/images/starwars-preview.jpg" alt="starwars-preview"></a>
-                            <h2>HTML, SCSS, JavaScript</h2>
                         </div>
-                    </div>
-                    <div class="large-4 medium-6 small-12 projects-card">
-                        <div class="card-info">
-                            <div>
-                                <h1>Project #7: Senators</h1>
+                        <div class="large-2 icon-boxes">
+                            <div class="background-icon">
+                                <img src="./PORTFOLIO/images/doc-icon.svg" alt="doc icon">
                             </div>
-                            <a href="DGM-1600-ScriptingWeb/senators-project/index.html"><img src="PORTFOLIO/images/senators-preview" alt="senators-preview"></a>
-                            <h2>HTML &amp; SCSS</h2>
-                        </div>
-                    </div>
-                    <div class="large-4 medium-6 small-12 projects-card">
-                        <div class="card-info">
-                            <div>
-                                <h1>Project #8: Spa</h1>
+                            <div class="color-icon">
+                                <a href="#"><img id="mustard-icon" src="./PORTFOLIO/images/doc-icon-mustard.svg" alt="doc icon mustard"></a>
                             </div>
-                            <a href="DGM-2780-Frameworks/project1-marketing/index.html"><img src="PORTFOLIO/images/spa-preview" alt="spa-preview"></a>
-                            <h2>HTML &amp; SCSS</h2>
-                        </div>
-                    </div>
-                    <div class="large-4 medium-6 small-12 projects-card">
-                        <div class="card-info">
-                            <div>
-                                <h1>Project #9: Boston</h1>
-                            </div>
-                            <a href="DGM-2740-WebLanguages/unit9-boston/index.html"><img src="PORTFOLIO/images/boston-preview.jpg" alt="boston-preview"></a>
-                            <h2>HTML, SCSS, JavaScript</h2>
-                        </div>
-                    </div>
-                    <div class="large-4 medium-6 small-12 projects-card">
-                        <div class="card-info">
-                            <div>
-                                <h1>Project #10: Law Firm</h1>
-                            </div>
-                            <a href="DGM-2740-WebLanguages/unit7-law-firm/index.html"><img src="PORTFOLIO/images/law-firm-preview.jpg" alt="law-firm-preview"></a>
-                            <h2>HTML, SCSS, JavaScript</h2>
-                        </div>
-                    </div>
-                    <div class="large-4 medium-6 small-12 projects-card">
-                        <div class="card-info">
-                            <div>
-                                <h1>Project #11: Band</h1>
-                            </div>    
-                            <a href="DGM-2740-WebLanguages/unit6-band/index.html"><img src="PORTFOLIO/images/band-preview.jpg" alt="band-preview"></a>
-                            <h2>HTML, SCSS, Lazy Loading</h2>
-                        </div>
-                    </div>
-                    <div class="large-4 medium-6 small-12 projects-card">
-                        <div class="card-info">
-                            <div>
-                                <h1>Project #12: News</h1>
-                            </div>
-                            <a href="DGM-2740-WebLanguages/unit8-news/index.html"><img src="PORTFOLIO/images/news-preview.jpg" alt="news-preview"></a>
-                            <h2>HTML, SCSS, JavaScript</h2>
-                        </div>
-                    </div>
-                    <div class="large-4 medium-6 small-12 projects-card">
-                        <div class="card-info">
-                            <div>
-                                <h1>Project #13: Restaurant</h1>
-                            </div>
-                            <a href="DGM-2740-WebLanguages/unit5-restaurant/index.html"><img src="PORTFOLIO/images/restaurant-preview.jpg" alt="restaurant-preview"></a>
-                            <h2>HTML &amp; SCSS</h2>
-                        </div>
-                    </div>
-                    <div class="large-4 medium-6 small-12 projects-card">
-                        <div class="card-info">
-                            <div>
-                                <h1>Project #14: Fruit Stand</h1>
-                            </div>
-                            <a href="DGM-2740-WebLanguages/unit3-fruit-stand/index.html"><img src="PORTFOLIO/images/fruit-preview.jpg" alt="fruit-preview"></a>
-                            <h2>HTML &amp; SCSS</h2>
-                        </div>
-                    </div>
-                    <div class="large-4 medium-6 small-12 projects-card">
-                        <div class="card-info">
-                            <div>
-                                <h1>Project #15: Starter</h1>
-                            </div>
-                            <a href="DGM-1600-ScriptingWeb/PracticeProject1-TTC/index.html"><img src="PORTFOLIO/images/personal-intersts.jpg" alt="starter-preview"></a>
-                            <h2>HTML &amp; CSS</h2>
-                        </div>
-                    </div>
-                    <div class="large-4 medium-6 small-12 projects-card">
-                        <div class="card-info">
-                            <div>
-                                <h1>Project #16: Joe's B&B</h1>
-                            </div>
-                            <a href="DGM-2760-WebLanguages2/unit1-joesBB/index.html"><img src="PORTFOLIO/images/joes-preview.jpg" alt="joes-preview"></a>
-                            <h2>HTML &amp; CSS</h2>
-                        </div>
-                    </div>
-                    <div class="large-4 medium-6 small-12 projects-card">
-                        <div class="card-info">
-                            <div>
-                                <h1>Project #17: Mobile Resort</h1>
-                            </div>
-                            <a href="DGM-2740-WebLanguages/unit11-mobile-app/index.html"><img src="PORTFOLIO/images/resort-preview.jpg" alt="resort-preview"></a>
-                            <h2>HTML &amp; SCSS</h2>
-                        </div>
-                    </div>
-                    <div class="large-4 medium-6 small-12 projects-card">
-                        <div class="card-info">
-                            <div>
-                                <h1>Project #18: Inspector Clouseau</h1>
-                            </div>
-                            <a href="DGM-2760-WebLanguages2/unit2-inspectorclouseau/index.html"><img src="PORTFOLIO/images/clouseau-preview.jpg" alt="clouseau-preview"></a>
-                            <h2>HTML, SCSS, JavaScript</h2>
-                        </div>
-                    </div>
-                    <div class="large-4 medium-6 small-12 projects-card">
-                        <div class="card-info">
-                            <div>
-                                <h1>Project #19: Guessing Game</h1>
-                            </div>
-                            <a href="DGM-2760-WebLanguages2/unit3-guessinggame/index.html"><img src="PORTFOLIO/images/guessing-preview.jpg" alt="guessing-preview"></a>
-                            <h2>HTML, SCSS, JavaScript</h2>
-                        </div>
-                    </div>
-                    <div class="large-4 medium-6 small-12 projects-card">
-                        <div class="card-info">
-                            <div>
-                                <h1>Project #20: Fortune Teller</h1>
-                            </div>
-                            <a href="DGM-2760-WebLanguages2/unit4-fortuneteller/index.html"><img src="PORTFOLIO/images/fortune-preview.jpg" alt="fortune-preview"></a>
-                            <h2>HTML, SCSS, JavaScript</h2>
-                        </div>
-                    </div>
-                    <div class="large-4 medium-6 small-12 projects-card">
-                        <div class="card-info">
-                            <div>
-                                <h1>Project #21: Bike Shop</h1>
-                            </div>
-                            <a href="DGM-2780-Frameworks/project2-book/website/index.html"><img src="PORTFOLIO/images/bike-preview" alt="bike-preview"></a>
-                            <h2>HTML &amp; LESS</h2>
-                        </div>
-                    </div>
-                    <div class="large-4 medium-6 small-12 projects-card">
-                        <div class="card-info">
-                            <div>
-                                <h1>Project #22: Arborist</h1>
-                            </div>
-                            <a href="DGM-2760-WebLanguages2/unit5-arborist/index.html"><img src="PORTFOLIO/images/arborist-preview" alt="arborist-preview"></a>
-                            <h2>HTML, SCSS, JavaScript</h2>
-                        </div>
-                    </div>
-                    <div class="large-4 medium-6 small-12 projects-card">
-                        <div class="card-info">
-                            <div>
-                                <h1>Project #23: Nonesense</h1>
-                            </div>
-                            <a href="DGM-2760-WebLanguages2/unit6-nonesense/index.html"><img src="PORTFOLIO/images/nonesense-preview" alt="nonesense-preview"></a>
-                            <h2>HTML, SCSS, JavaScript</h2>
-                        </div>
-                    </div>
-                    <div class="large-4 medium-6 small-12 projects-card">
-                        <div class="card-info">
-                            <div>
-                                <h1>Project #24: Pizza</h1>
-                            </div>
-                            <a href="DGM-2760-WebLanguages2/unit7-pizza/index.html"><img src="PORTFOLIO/images/pizza-preview.jpg" alt="pizza-preview"></a>
-                            <h2>HTML, SCSS, JavaScript</h2>
-                        </div>
-                    </div>
-                    <div class="large-4 medium-6 small-12 projects-card">
-                        <div class="card-info">
-                            <div>
-                                <h1>Project #25: Grant's Tomb</h1>
-                            </div>
-                            <a href="DGM-2760-WebLanguages2/unit8-grants-tomb/index.html"><img src="PORTFOLIO/images/grant-preview" alt="grant-preview"></a>
-                            <h2>HTML, SCSS, JavaScript</h2>
-                        </div>
-                    </div>
-                    <div class="large-4 medium-6 small-12 projects-card">
-                        <div class="card-info">
-                            <div>
-                                <h1>Project #26: Hotel</h1>
-                            </div>
-                            <a href="DGM-2760-WebLanguages2/unit10-hotel/index.html"><img src="PORTFOLIO/images/hotel-preview.jpg" alt="hotel-preview"></a>
-                            <h2>HTML, SCSS, JavaScript</h2>
-                        </div>
-                    </div>
-                    <div class="large-4 medium-6 small-12 projects-card">
-                        <div class="card-info preview-hover">
-                            <div>
-                                <h1>Project #27: Coming Soon</h1>
-                            </div>
-                            <a href="#"><img src="PORTFOLIO/images/coming-soon-preview.png" alt="coming-preview"></a>
-                            <h2>Coming Soon...</h2>
                         </div>
                     </div>
                 </div>
-            </section>
+                <div class="page-arrow-down">
+                    <img id="arrow-icon-size" src="./PORTFOLIO/images/arrow-icon.svg" alt="arrow icon">
+                    <a href="#ux-ui-section"><img id="arrow-icon-size" src="./PORTFOLIO/images/arrow-icon-green.svg" alt="arrow icon"></a>
+                </div>
+            </div>
         </main>
+        
+        <section id="ux-ui-section" class="large-12 ux-ui-section-container">
+            <div class="large-10 ux-ui-section">
+                <div class="large-12 head1-box">
+                    <h1>UX/UI</h1>
+                </div>
+                <div class="large-10 project-show-1">
+                    <div class="large-7 project-display">
+                        <img src="PORTFOLIO/images/canvas-project-preview.jpg" alt="canvas project preview">
+                    </div>
+                    <div class="large-5 text-display">
+                        <div class="text-title">
+                            <h2>Canvas Redesign Concept</h2>
+                        </div>
+                        <div class="text-details">
+                            <h3>Learning Management Software by Instructure. I focused on giving the software a modern look with intuitive navigation.</h3>
+                        </div>
+                        <div class="text-learn-more">
+                            <a href="#">
+                                <div class="learn-more-div">
+                                    <div class="learn-more-title">
+                                        <h3>Learn More</h3>
+                                    </div>
+                                    <div class="learn-more-icon">
+                                        <img src="PORTFOLIO/images/arrow-right-icon-white.svg" alt="arrow right icon white">   
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="large-10 project-show-2">
+                    <div class="large-5 text-display">
+                        <div class="text-title">
+                            <h2>GoReact Redesign Concept</h2>
+                        </div>
+                        <div class="text-details">
+                            <h3>This company challenged us to redesign their website. We were encouraged to make it our own while keeping the same functionality.</h3>
+                        </div>
+                        <div class="text-learn-more">
+                            <a href="#">
+                                <div class="learn-more-div">
+                                    <div class="learn-more-title">
+                                        <h3>Learn More</h3>
+                                    </div>
+                                    <div class="learn-more-icon">
+                                        <img src="PORTFOLIO/images/arrow-right-icon-white.svg" alt="arrow right icon white">   
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="large-7 project-display">
+                        <img src="PORTFOLIO/images/goreact-project.jpg" alt="goreact project preview">
+                    </div>
+                </div>
+                <div class="large-10 project-show-3">
+                    <div class="large-7 project-display">
+                        <img src="PORTFOLIO/images/important-world-info-app-preview.jpg" alt="important world info app preview">
+                    </div>
+                    <div class="large-5 text-display">
+                        <div class="text-title">
+                            <h2>Important World Info</h2>
+                        </div>
+                        <div class="text-details">
+                            <h3>I was challenged to develop a concept publication and support mobile, tablet, and desktop. We finished with a polish prototype of the mobile app.</h3>
+                        </div>
+                        <div class="text-learn-more">
+                            <a href="https://projects.invisionapp.com/share/UGWZPVV2K95#/screens">
+                                <div class="learn-more-div">
+                                    <div class="learn-more-title">
+                                        <h3>View Prototype</h3>
+                                    </div>
+                                    <div class="learn-more-icon">
+                                        <img src="PORTFOLIO/images/arrow-right-icon-white.svg" alt="arrow right icon white">   
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="large-10 project-show-4">
+                    <div class="large-5 text-display">
+                        <div class="text-title">
+                            <h2>Clean Keyboards</h2>
+                        </div>
+                        <div class="text-details">
+                            <h3>Learn about mechanical keyboards. This project focused on magazines converted to digital view.</h3>
+                        </div>
+                        <div class="text-learn-more">
+                            <a href="https://xd.adobe.com/view/44113117-313e-4086-a7b9-4b9bd80c78d4-1142/?fullscreen&hints=on">
+                                <div class="learn-more-div">
+                                    <div class="learn-more-title">
+                                        <h3>View Prototype</h3>
+                                    </div>
+                                    <div class="learn-more-icon">
+                                        <img src="PORTFOLIO/images/arrow-right-icon-white.svg" alt="arrow right icon white">   
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="large-7 project-display">
+                        <img src="PORTFOLIO/images/clean-keyboards-preview.jpg" alt="clean keyboards preview">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="website-section" class="large-12 website-section-container">
+            <div class="large-10 website-section">
+                <div class="large-12 head1-box">
+                    <h1>WEBSITES</h1>
+                </div>
+                <div class="large-10 project-show-6">
+                    <div class="large-7 project-display">
+                        <img src="PORTFOLIO/images/cozy-preview.jpg" alt="cozy-preview">
+                    </div>
+                    <div class="large-5 text-display">
+                        <div class="text-title">
+                            <h2>Cozy Corner</h2>
+                        </div>
+                        <div class="text-details">
+                            <h3>We were challenged to replicate a website from scratch. This website is responsive and has subtle animations. The website replicated &mdash; html5up.net/forty</h3>
+                        </div>
+                        <div class="text-learn-more">
+                            <a href="/DGM-2780-Frameworks/project3-cozy/index.html">
+                                <div class="learn-more-div">
+                                    <div class="learn-more-title">
+                                        <h3>Visit Website</h3>
+                                    </div>
+                                    <div class="learn-more-icon">
+                                        <img src="PORTFOLIO/images/arrow-right-icon-white.svg" alt="arrow right icon white">   
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="large-10 project-show-7">
+                    <div class="large-5 text-display">
+                        <div class="text-title">
+                            <h2>Omni Food</h2>
+                        </div>
+                        <div class="text-details">
+                            <h3>This website has many levels of details and diversity. There are many advanced techniques in the design that really establish a modern appealing website.</h3>
+                        </div>
+                        <div class="text-learn-more">
+                            <a href="/OMNIFOOD/index.html">
+                                <div class="learn-more-div">
+                                    <div class="learn-more-title">
+                                        <h3>Visit Website</h3>
+                                    </div>
+                                    <div class="learn-more-icon">
+                                        <img src="PORTFOLIO/images/arrow-right-icon-white.svg" alt="arrow right icon white">   
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="large-7 project-display">
+                        <img src="PORTFOLIO/images/omnifood-preview.jpg" alt="omnifood preview">
+                    </div>
+                </div>
+                <div class="large-10 project-show-3">
+                    <div class="large-7 project-display">
+                        <img src="PORTFOLIO/images/frozen-light-preview.jpg" alt="frozen light preview">
+                    </div>
+                    <div class="large-5 text-display">
+                        <div class="text-title">
+                            <h2>Frozen Light</h2>
+                        </div>
+                        <div class="text-details">
+                            <h3>This elegant website focuses on the navigation menu changing from different display sizes.</h3>
+                        </div>
+                        <div class="text-learn-more">
+                            <a href="/DGM-2740-WebLanguages/unit12-frozen-light/index.html">
+                                <div class="learn-more-div">
+                                    <div class="learn-more-title">
+                                        <h3>Visit Website</h3>
+                                    </div>
+                                    <div class="learn-more-icon">
+                                        <img src="PORTFOLIO/images/arrow-right-icon-white.svg" alt="arrow right icon white">   
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="large-10 project-show-5">
+                    <div class="large-5 text-display">
+                        <div class="text-title">
+                            <h2>Pokemon API</h2>
+                        </div>
+                        <div class="text-details">
+                            <h3>This API project pulls from the public Pokemon API and displays different pokemon. The cards are clickable and reveal stats from the API related to the Pokemon.</h3>
+                        </div>
+                        <div class="text-learn-more">
+                            <a href="/DGM-1600-ScriptingWeb/pokemon-project/index.html">
+                                <div class="learn-more-div">
+                                    <div class="learn-more-title">
+                                        <h3>Visit Website</h3>
+                                    </div>
+                                    <div class="learn-more-icon">
+                                        <img src="PORTFOLIO/images/arrow-right-icon-white.svg" alt="arrow right icon white">   
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="large-7 project-display">
+                        <img src="PORTFOLIO/images/pokemon-preview.jpg" alt="pokemon preview">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="large-12 website-section">
+
+        </section>
 
         <!--------------- footer --------------->
-        <div class="footer-wrapper">
-            <footer>
-                <div>
-                    &copy; 2019 Tyson Cottam
+        <footer class="footer-bar">
+            <div class="large-6 copy-right-box">
+                <h2>&#169; 2020 TYSON COTTAM</h2>
+            </div>
+            <div class="large-6 footer-icon-box">
+                <div class="large-5 icon-size-adjust">
+                    <div class="large-2 icon-boxes">
+                        <div class="background-icon">
+                            <img src="./PORTFOLIO/images/linkedin-icon-solid-green.svg" alt="linkedin icon">
+                        </div>
+                        <div class="color-icon">
+                            <a href="https://www.linkedin.com/in/tysoncottam/"><img id="green-icon" src="./PORTFOLIO/images/linkedin-icon-green.svg" alt="linkedin icon"></a>
+                        </div>
+                    </div>
+                    <div class="large-2 icon-boxes">
+                        <div class="background-icon">
+                            <img src="./PORTFOLIO/images/git-icon-solid-green.svg" alt="git icon">
+                        </div>
+                        <div class="color-icon">
+                            <a href="https://github.com/tysoncottam"><img id="red-icon" src="./PORTFOLIO/images/git-icon-green.svg" alt="git icon"></a>
+                        </div>
+                    </div>
+                    <div class="large-2 icon-boxes">
+                        <div class="background-icon">
+                            <img src="./PORTFOLIO/images/people-icon-solid-green.svg" alt="people icon">
+                        </div>
+                        <div class="color-icon">
+                            <a href="#"><img id="blue-icon" src="./PORTFOLIO/images/people-icon-green.svg" alt="people icon"></a>
+                        </div>
+                    </div>
+                    <div class="large-2 icon-boxes">
+                        <div class="background-icon">
+                            <img src="./PORTFOLIO/images/doc-icon-solid-green.svg" alt="doc icon">
+                        </div>
+                        <div class="color-icon">
+                            <a href="#"><img id="mustard-icon" src="./PORTFOLIO/images/doc-icon-green.svg" alt="doc icon"></a>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <ul class="social-links">
-                        <li><a href="https://www.facebook.com/cottamtyson"><i class="ion-social-facebook"></i></a></li>
-                        <li><a href="https://twitter.com/tysoncottam"><i class="ion-social-twitter smaller-icon"></i></a></li>
-                        <li><a href="mailto:tysoncottam@gmail.com"><i class="ion-android-mail bigger-icon"></i></a></li>
-                    </ul>
-                </div>
-            </footer>
-        </div>
+            </div>
+        </footer>
+        
         <script src="/PORTFOLIO/js/app.js"></script>
     </body>
 </html>

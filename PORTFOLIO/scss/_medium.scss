@@ -19,66 +19,10 @@
 /* --------------- nav --------------- */
 
 /* --------------- main --------------- */
-.main-page
-{
-    background-attachment: scroll;
-}
 
-.main-page .user-information img
-{
-    width: 250px;
-}
 /* --------------- footer --------------- */
 
 @media only screen and (max-width: 840px)
 { 
-    .nav-wrapper nav .nav-links li a 
-    {
-        font-size: 150%;
-    }
-    .main-page .user-information h1,
-    .projects-section .projects-heading div h1
-    {
-        font-size: 280%;
-    }
     
-    .main-page .user-information h2
-    {
-        font-size: 130%;
-    }
-    
-    .card-info
-    {
-        h1
-        {
-            font-size: 160%;
-        }
-        h2
-        {
-            font-size: 130%;
-        }
-    }
-}
-
-@media only screen and (max-height: 300px)
-{
-    .main-page
-    {
-        flex-direction: column;
-    }
-    .main-page .user-information,
-    .main-page .projects-button-area
-    {
-        position: relative;
-    }
-    
-    .main-page .user-information
-    {
-        margin-bottom: 50px;
-    }
-    
-    .main-page .projects-button-area
-    {
-        display: none;
-    }
 }
