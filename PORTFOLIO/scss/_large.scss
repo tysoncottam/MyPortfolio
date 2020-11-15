@@ -50,7 +50,9 @@ body
 /* --------------- nav --------------- */
 .nav-bar
 {
-    @include nav-footer-default;
+    @include flex-row;
+    max-height: 80px;
+    min-height: 80px;
     justify-content: flex-end;
     background-color: transparent;
     position: fixed;
@@ -230,7 +232,7 @@ body
 /* --------------- footer --------------- */
 .footer-bar
 {
-    @include nav-footer-default;
+    @include flex-row;
     background-color: $dark-mint-color;
     .copy-right-box
     {
