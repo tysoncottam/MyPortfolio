@@ -101,7 +101,6 @@ body
     border-bottom: 5px solid $light-grey-color;
     transform: translateY(-100%);
     transition: transform 0.4s ease-in;
-    @include box-shadow-default;
     .nav-content
     {
         @include flex-row;
@@ -207,6 +206,7 @@ body
 .nav-content-container-active
 {
     transform: translateY(0%);
+    @include box-shadow-default;
 }
 
 @keyframes navLinkFade
