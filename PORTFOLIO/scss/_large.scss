@@ -58,8 +58,8 @@ body
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    z-index: 2;
+    width: 100%;
+    z-index: 5;
     .hamburger-nav-box
     {
         @include flex-col;
@@ -70,6 +70,7 @@ body
         min-width: 30px;
         margin-right: 40px;
         position: relative;
+        cursor: pointer;
         .nav-top-bar,
         .nav-middle-bar,
         .nav-bottom-bar
@@ -82,8 +83,156 @@ body
             min-width: 30px;
             padding: 0;
             margin: 0;
+            transition: all 0.3s ease;
         }
     }
+}
+
+.nav-content-container
+{
+    @include flex-row;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 40vh;
+    width: 100%;
+    z-index: 4;
+    border-bottom: 5px solid $light-grey-color;
+    transform: translateY(-100%);
+    transition: transform 0.4s ease-in;
+    .nav-content
+    {
+        @include flex-row;
+        position: absolute;
+        top: 0;
+        justify-content: space-between;
+        height: 40vh;
+        width: $max-width;
+        .profile-text
+        {
+            @include flex-col;
+            align-items: flex-start;
+            opacity: 0;
+            h2
+            {
+                @include h2-default;
+                text-align: left;
+                margin: 0;
+                padding: 0;
+            }
+            h3
+            {
+                @include h3-default;
+                text-align: left;
+            }
+        }
+        .nav-links-section
+        {
+            @include flex-row;
+            justify-content: flex-end;
+            align-items: flex-start;
+            .menu-section
+            {
+                @include flex-col;
+                align-items: flex-start;
+                margin-left: 160px;
+                opacity: 0;
+                h2
+                {
+                    @include h2-default;
+                    margin: 0;
+                    text-align: left;
+                    letter-spacing: 5px;
+                }
+                a
+                {
+                    text-decoration: none;
+                    h3
+                    {
+                        @include h3-default;
+                        cursor: pointer;
+                        text-align: left;
+                        margin-top: 10px;
+                        font-size: 16px;
+                        letter-spacing: 2.5px;
+                        border: 2px solid transparent;
+                        transition: border 0.3s;
+                        &:hover
+                        {
+                            border-bottom: 2px solid $dark-grey-color;
+                        }
+                    }
+                }
+            }
+            .portfolio-section
+            {
+                @include flex-col;
+                align-items: flex-start;
+                margin-left: 160px;
+                opacity: 0;
+                h2
+                {
+                    @include h2-default;
+                    margin: 0;
+                    text-align: left;
+                    letter-spacing: 5px;
+                }
+                a
+                {
+                    text-decoration: none;
+                    h3
+                    {
+                        @include h3-default;
+                        cursor: pointer;
+                        text-align: left;
+                        margin: 0;
+                        margin-top: 10px;
+                        font-size: 16px;
+                        letter-spacing: 2.5px;
+                        border: 2px solid transparent;
+                        transition: border 0.3s;
+                        &:hover
+                        {
+                            border-bottom: 2px solid $dark-grey-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.nav-content-container-active
+{
+    transform: translateY(0%);
+}
+
+@keyframes navLinkFade
+{
+    from
+    {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.toggle .nav-top-bar
+{
+    transform: rotate(-45deg) translate(-8px,6px);
+}
+.toggle .nav-middle-bar
+{
+    opacity: 0;
+}
+.toggle .nav-bottom-bar
+{
+    transform: rotate(45deg) translate(-8px,-6px);
 }
 
 /* --------------- main --------------- */
