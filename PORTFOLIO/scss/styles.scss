@@ -167,6 +167,28 @@ $max-width: 1600px;
     text-align: center;
 }
 
+/* ------ page-arrow-down defaults ------ */
+@mixin page-arrow-down-defaults
+{
+    @include flex-row;
+    position: absolute;
+    bottom: 36px;
+    #arrow-icon-size
+    {
+        width: 72px;
+        height: auto;
+        position: absolute;
+        top: 0;
+    }
+    a
+    {
+        #arrow-icon-size
+        {
+            @include arrow-down-default;
+        }
+    }
+}
+
 /* ------ project defaults ------ */
 @mixin project-show-default
 {
