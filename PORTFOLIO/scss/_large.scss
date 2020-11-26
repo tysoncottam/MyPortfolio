@@ -329,6 +329,7 @@ body
             {
                 width: auto;
                 height: 100%;
+                max-height: 120px;
                 padding: 0;
                 margin: 0;
             }
@@ -346,6 +347,15 @@ body
                 padding: 0;
                 margin: 0;
             }
+            #profile-pic
+            {
+                border-radius: 50%;
+                border: 5px solid #DADADA;
+            }
+        }
+        #profile-container
+        {
+            padding: 40px 0 120px 0;
         }
         .page-arrow-down
         {
