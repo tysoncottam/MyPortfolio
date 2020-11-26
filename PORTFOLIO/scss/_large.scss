@@ -355,8 +355,8 @@ body
             #resume-pic
             {
                 border-radius: 20px;
-                max-width: $max-width;
-                min-width: $max-width;
+                max-width: $max-width-project-brief;
+                min-width: $max-width-project-brief;
                 height: auto;
                 border: 5px solid #DADADA;
                 @include box-shadow-default;
