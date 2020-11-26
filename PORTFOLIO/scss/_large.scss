@@ -352,9 +352,23 @@ body
                 border-radius: 50%;
                 border: 5px solid #DADADA;
             }
+            #resume-pic
+            {
+                border-radius: 20px;
+                max-width: $max-width;
+                min-width: $max-width;
+                height: auto;
+                border: 5px solid #DADADA;
+                @include box-shadow-default;
+            }
         }
         #profile-container
         {
+            padding: 40px 0 120px 0;
+        }
+        #resume-container
+        {
+            height: auto;
             padding: 40px 0 120px 0;
         }
         .page-arrow-down
@@ -362,6 +376,10 @@ body
             @include page-arrow-down-defaults;
         }
     }
+}
+#resume-hero
+{
+    height: auto;
 }
 
 /* --------------- ux-ui-section --------------- */
