@@ -411,9 +411,59 @@ body
 /* --------------- canvas-project-explain --------------- */
 .canvas-project-explain
 {
-    @include flex-col;
-    height: 1000px;
-    background-color: $red-color
+    @include flex-row;
+    background-color: $red-color;
+    .head1-box
+    {
+        @include h1-page-details-header;
+        flex-direction: column;
+        max-width: $max-width-project-brief;
+        min-width: $max-width-project-brief;
+        padding: 150px 0 37.5px 0;
+        h2
+        {
+            color: #fff;
+            font-weight: 300;
+            align-items: flex-start;
+        }
+    }
+    .project-large-image-container
+    {
+        @include flex-col;
+        max-width: 100%;
+        min-width: 100%;
+        margin: 0;
+        padding: 37.5px 0 37.5px 0;
+        img
+        {
+            width: 100%;
+            height: auto;
+            border: 5px solid #DADADA;
+        }
+    }
+    .project-container
+    {
+        @include flex-col;
+        max-width: $max-width;
+        min-width: $max-width;
+        margin: 0;
+        padding: 37.5px 0 150px 0;
+        img
+        {
+            width: 100%;
+            height: auto;
+            margin: 25px 0;
+            border: 5px solid #DADADA;
+        }
+        #first-image
+        {
+            padding-top: 0;
+        }
+        #last-image
+        {
+            padding-bottom: 0;
+        }
+    }
 }
 
 /* --------------- footer --------------- */
