@@ -247,7 +247,6 @@ body
     background-image: url(../images/lake-view-background.jpg);
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
     height: 90vh;
     position: relative;
     .profile-box
@@ -617,4 +616,10 @@ body
     }
     
 }
-
+@media only screen and (min-width: 1200px)
+{
+    .hero-image
+    {
+        background-attachment: fixed;
+    }
+}
