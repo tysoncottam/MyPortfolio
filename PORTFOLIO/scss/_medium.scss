@@ -17,12 +17,88 @@
 /* --------------- header --------------- */
 
 /* --------------- nav --------------- */
+.nav-bar .hamburger-nav-box
+{
+    align-content: space-around;
+    width: auto;
+    height: auto;
+}
+
+.nav-bar .hamburger-nav-box .nav-top-bar,
+.nav-bar .hamburger-nav-box .nav-middle-bar, 
+.nav-bar .hamburger-nav-box .nav-bottom-bar
+{
+    width: 23px;
+    height: 2.5;
+    padding: 0;
+    margin: 2.5px;
+}
+
+.toggle .nav-top-bar
+{
+    transform: rotate(-45deg) translate(-5.5px,6px);
+}
+.toggle .nav-bottom-bar
+{
+    transform: rotate(45deg) translate(-5.5px,-6px);
+}
+
 
 /* --------------- main --------------- */
-
-/* --------------- footer --------------- */
-
-@media only screen and (max-width: 840px)
-{ 
-    
+.hero-image .profile-box
+{
+    max-height: 500px;
+    min-height: 500px;
+    max-width: 350px;
+    min-width: 350px;
 }
+
+.hero-image .profile-box .profile-picture-circle
+{
+    max-width: 125px;
+    min-width: 125px;
+    max-height: 125px;
+    min-height: 125px;
+    top: 50px;
+}
+
+.hero-image .profile-box .profile-text h2
+{
+    font-size: 18px;
+}
+
+.hero-image .profile-box .profile-text h3
+{
+    font-size: 12px;
+    letter-spacing: 3px;
+    line-height: 20px;
+}
+
+.hero-image .profile-box .style-profile-line
+{
+    top: 100px;
+}
+
+.hero-image .profile-box .profile-icon-box
+{
+    bottom: 40px;
+}
+
+.hero-image .page-arrow-down
+{
+    bottom: 25px;
+}
+
+.hero-image .page-arrow-down #arrow-icon-size,
+.hero-image .page-arrow-down a #arrow-icon-size
+{
+    width: 50px;
+}
+
+.ux-ui-section-container .ux-ui-section, 
+.ux-ui-section-container .website-section
+{
+    max-width: 90vw;
+    min-width: 90vw;
+}
+/* --------------- footer --------------- */

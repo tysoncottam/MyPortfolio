@@ -64,10 +64,12 @@ body
     {
         @include flex-col;
         justify-content: space-between;
-        max-height: 22px;
-        min-height: 22px;
-        max-width: 30px;
-        min-width: 30px;
+//        max-height: 22px;
+//        min-height: 22px;
+//        max-width: 30px;
+//        min-width: 30px;
+        width: auto;
+        height: auto;
         margin-right: 40px;
         position: relative;
         cursor: pointer;
@@ -77,12 +79,14 @@ body
         {
             @include flex-row;
             background-color: $dark-grey-color;
-            max-height: 3px;
-            min-height: 3px;
-            max-width: 30px;
-            min-width: 30px;
+            width: 30px;
+            height: 3px;
+//            max-height: 3px;
+//            min-height: 3px;
+//            max-width: 30px;
+//            min-width: 30px;
             padding: 0;
-            margin: 0;
+            margin: 3px 0;
             transition: all 0.3s ease;
         }
     }
@@ -225,7 +229,7 @@ body
 
 .toggle .nav-top-bar
 {
-    transform: rotate(-45deg) translate(-8px,6px);
+    transform: rotate(-45deg) translate(-6.5px,6px);
 }
 .toggle .nav-middle-bar
 {
@@ -233,7 +237,7 @@ body
 }
 .toggle .nav-bottom-bar
 {
-    transform: rotate(45deg) translate(-8px,-6px);
+    transform: rotate(45deg) translate(-6.5px,-6px);
 }
 
 /* --------------- main --------------- */
@@ -393,18 +397,34 @@ body
         .project-show-1
         {
             @include project-background-blue;
+            .project-display
+            {
+                background-image: url(../images/canvas-project-preview.jpg);
+            }
         }
         .project-show-2
         {
             @include project-background-red;
+            .project-display
+            {
+                background-image: url(../images/goreact-project.jpg);
+            }
         }
         .project-show-3
         {
             @include project-background-mustard;
+            .project-display
+            {
+                background-image: url(../images/important-world-info-app-preview.jpg);
+            }
         }
         .project-show-4
         {
             @include project-background-blue;
+            .project-display
+            {
+                background-image: url(../images/clean-keyboards-preview.jpg);
+            }
         }
     }
 }
@@ -420,18 +440,34 @@ body
         .project-show-6
         {
             @include project-background-mint;
+            .project-display
+            {
+                background-image: url(../images/cozy-preview.jpg);
+            }
         }
         .project-show-7
         {
             @include project-background-mustard;
+            .project-display
+            {
+                background-image: url(../images/omnifood-preview.jpg);
+            }
         }
         .project-show-3
         {
             @include project-background-grey;
+            .project-display
+            {
+                background-image: url(../images/frozen-light-preview.jpg);
+            }
         }
         .project-show-5
         {
             @include project-background-red;
+            .project-display
+            {
+                background-image: url(../images/pokemon-preview.jpg);
+            }
         }
     }
 }
@@ -510,6 +546,7 @@ body
             font-weight: 400;
             padding: 0;
             margin: 0;
+            font-size: 1.5vw;
         }
     }
     .footer-icon-box
@@ -523,7 +560,7 @@ body
         {
             @include flex-row;
             justify-content: flex-start;
-            padding: 20px;
+            padding: 1.5vw 0;
             padding-left: 10px;
         }
         .icon-boxes .background-icon,
@@ -534,5 +571,50 @@ body
     }
 }
 
+@media only screen and (max-width: 1400px)
+{
+    .nav-content-container .nav-content .nav-links-section .portfolio-section,
+    .nav-content-container .nav-content .nav-links-section .menu-section
+    {
+        margin-left: 40px;
+    }
+}
 
+@media only screen and (max-width: 1100px)
+{
+    .nav-content-container
+    {
+        flex-direction: row;
+        height: 100vh;
+        .nav-content
+        {
+            height: 100vh;
+            flex-direction: row;
+            align-content: center;
+            align-items: center;
+            .profile-text
+            {
+                width: 100%;
+                align-items: center;
+                margin-bottom: 30px;
+                h3
+                {
+                    text-align: center;
+                }   
+            }
+            .nav-links-section
+            {
+                width: 100%;
+                justify-content: center;
+                margin-top: 30px;
+                .menu-section,
+                .portfolio-section
+                {
+                    margin: 0 30px;
+                }
+            }
+        }
+    }
+    
+}
 

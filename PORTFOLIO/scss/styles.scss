@@ -11,8 +11,8 @@ $mustard-color: #DBAB26;
 
 /* --------------- other --------------- */
 $standard-font-size: 16px;
-//$max-width: 80vw;
-$max-width: 1600px;
+$max-width: 75vw;
+//$max-width: 1600px;
 $max-width-project-brief: 1000px;
 
 /* --------------- mixin --------------- */
@@ -120,7 +120,7 @@ $max-width-project-brief: 1000px;
 @mixin h1-default
 {
     font-weight: 100;
-    font-size: 80px;
+    font-size: 6vw;
     color: #fff;
     letter-spacing: 20px;
     margin: 136px 0 100px 0;
@@ -210,7 +210,7 @@ $max-width-project-brief: 1000px;
     justify-content: flex-start;
     width: 100%;
     margin: 0;
-    margin-bottom: 150px;
+    margin-bottom: 8vw;
     padding: 0;
 }
 
@@ -219,10 +219,15 @@ $max-width-project-brief: 1000px;
     @include flex-row;
     background-color: #fff;
     width: 100%;
-    height: 600px;
+//    height: 600px
+    height: 0;
     margin: 0;
     padding: 0;
     border: 5px solid $light-grey-color;
+    padding-top: 40%;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 @mixin text-display-default
@@ -261,7 +266,7 @@ $max-width-project-brief: 1000px;
             .text-display
             {
                 @include text-display-default;
-                margin-left: -160px;
+                margin-left: -10vw;
             }
         }
         .project-show-2
@@ -276,7 +281,7 @@ $max-width-project-brief: 1000px;
             .text-display
             {
                 @include text-display-default;
-                margin-right: -160px;
+                margin-right: -10vw;
             }
         }
         .project-show-3
@@ -290,7 +295,7 @@ $max-width-project-brief: 1000px;
             .text-display
             {
                 @include text-display-default;
-                margin-left: -160px;
+                margin-left: -10vw;
             }
         }
         .project-show-4
@@ -305,7 +310,7 @@ $max-width-project-brief: 1000px;
             .text-display
             {
                 @include text-display-default;
-                margin-right: -160px;
+                margin-right: -10vw;
             }
         }
         .project-show-5
@@ -319,7 +324,7 @@ $max-width-project-brief: 1000px;
             .text-display
             {
                 @include text-display-default;
-                margin-right: -160px;
+                margin-right: -10vw;
             }
         }
         .project-show-6
@@ -333,7 +338,7 @@ $max-width-project-brief: 1000px;
             .text-display
             {
                 @include text-display-default;
-                margin-left: -160px;
+                margin-left: -10vw;
             }
         }
         .project-show-7
@@ -347,7 +352,7 @@ $max-width-project-brief: 1000px;
             .text-display
             {
                 @include text-display-default;
-                margin-right: -160px;
+                margin-right: -10vw;
             }
         }
     }
@@ -374,84 +379,102 @@ $max-width-project-brief: 1000px;
                 justify-content: flex-start;
                 align-content: space-between;
                 background-color:  $dark-blue-color;
-                padding: 50px;
+                height: 0;
+                padding-top: 30%;
+//                padding: 50px;
                 opacity: 95%;
                 @include box-shadow-default;
-                .text-title
+                position: relative;
+                .text-display-container
                 {
-                    h2
-                    {
-                        color: #fff;
-                        padding: 0;
-                        margin: 0;
-                        font-size: 40px;
-                        font-weight: 400;
-                        margin-bottom: 20px;
-                    }
-                }
-                .text-details
-                {
-                    h3
-                    {
-                        color: #fff;
-                        padding: 0;
-                        margin: 0;
-                        font-size: 30px;
-                        font-weight: 300;
-                        height: 170px;
-                    }
-                }
-                .text-learn-more
-                { 
-                    width: 100%;
                     @include flex-row;
-                    justify-content: flex-end;
-                    a
+                    justify-content: flex-start;
+                    align-content: space-between;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    padding: 3vw;
+                    .text-title
                     {
-                        text-decoration: none;
-                        transition: all 0.3s;
-                        padding: 15px 0px;
-                        border: 3px solid transparent;
-                        .learn-more-div
+                        h2
                         {
-                            @include flex-row;
-                            width: 100%;
-                            .learn-more-title
+                            color: #fff;
+                            padding: 0;
+                            margin: 0;
+//                            font-size: 40px;
+                            font-size: 2vw;
+                            font-weight: 400;
+                            margin-bottom: 20px;
+                        }
+                    }
+                    .text-details
+                    {
+                        h3
+                        {
+                            color: #fff;
+                            padding: 0;
+                            margin: 0;
+//                            font-size: 30px;
+                            font-size: 1.5vw;
+                            font-weight: 300;
+//                            height: 170px;
+                        }
+                    }
+                    .text-learn-more
+                    { 
+                        width: 100%;
+                        @include flex-row;
+                        justify-content: flex-end;
+                        a
+                        {
+                            text-decoration: none;
+                            transition: all 0.3s;
+                            padding: 15px 0px;
+                            border: 3px solid transparent;
+                            .learn-more-div
                             {
                                 @include flex-row;
-                                height: auto;
-                                padding: 0;
-                                margin: 0;
-                                h3
+                                width: 100%;
+                                .learn-more-title
                                 {
-                                    color: #fff;
+                                    @include flex-row;
+                                    height: auto;
                                     padding: 0;
                                     margin: 0;
-                                    font-size: 30px;
-                                    font-weight: 300;
-                                    padding: 0 10px 0 20px;
+                                    h3
+                                    {
+                                        color: #fff;
+                                        padding: 0;
+                                        margin: 0;
+//                                        font-size: 30px;
+                                        font-size: 1.5vw;
+                                        font-weight: 300;
+                                        padding: 0 10px 0 20px;
+                                    }
                                 }
-                            }
-                            .learn-more-icon
-                            {
-                                @include flex-row;
-                                height: auto;
-                                padding: 0;
-                                margin: 0;
-                                img
+                                .learn-more-icon
                                 {
-                                    width: 100%;
-                                    height: 40px;
-                                    width: auto;
-                                    padding: 0 15px 0 5px;
+                                    @include flex-row;
+                                    height: auto;
+                                    padding: 0;
+                                    margin: 0;
+                                    img
+                                    {
+                                        width: 100%;
+                                        height: 2vw;
+                                        width: auto;
+                                        padding: 0 15px 0 5px;
+                                    }
                                 }
                             }
-                        }
-                        &:hover
-                        {
-                            background-color: $dark-blue-color;
-                            box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.25);
-                            border: 3px solid #fff;
+                            &:hover
+                            {
+                                background-color: $dark-blue-color;
+                                box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.25);
+                                border: 3px solid #fff;
+                            }
                         }
                     }
                 }
@@ -466,9 +489,12 @@ $max-width-project-brief: 1000px;
     .text-display
     {
         background-color: $dark-mint-color;
-        .text-learn-more a:hover
+        .text-display-container
         {
-            background-color: $dark-mint-color;
+            .text-learn-more a:hover
+            {
+                background-color: $dark-mint-color;
+            }
         }
     }
 }
@@ -479,9 +505,12 @@ $max-width-project-brief: 1000px;
     .text-display
     {
         background-color: $dark-blue-color;
-        .text-learn-more a:hover
+        .text-display-container
         {
-            background-color: $dark-blue-color;
+            .text-learn-more a:hover
+            {
+                background-color: $dark-blue-color;
+            }
         }
     }
 }
@@ -492,9 +521,12 @@ $max-width-project-brief: 1000px;
     .text-display
     {
         background-color: $red-color;
-        .text-learn-more a:hover
+        .text-display-container
         {
-            background-color: $red-color;
+            .text-learn-more a:hover
+            {
+                background-color: $red-color;
+            }
         }
     }
 }
@@ -505,9 +537,12 @@ $max-width-project-brief: 1000px;
     .text-display
     {
         background-color: $mustard-color;
-        .text-learn-more a:hover
+        .text-display-container
         {
-            background-color: $mustard-color;
+            .text-learn-more a:hover
+            {
+                background-color: $mustard-color;
+            }
         }
     }
 }
@@ -518,9 +553,12 @@ $max-width-project-brief: 1000px;
     .text-display
     {
         background-color: $dark-grey-color;
-        .text-learn-more a:hover
+        .text-display-container
         {
-            background-color: $dark-grey-color;
+            .text-learn-more a:hover
+            {
+                background-color: $dark-grey-color;
+            }
         }
     }
 }
@@ -528,7 +566,7 @@ $max-width-project-brief: 1000px;
 /* --------------- imports --------------- */
 @import "normalize";
 @import "large";
-@media only screen and (max-width: 80rem)
+@media only screen and (max-width: 1200px)
 { @import "medium"; }
-@media only screen and (max-width: 40rem)
+@media only screen and (max-width: 600px)
 { @import "small"; }
