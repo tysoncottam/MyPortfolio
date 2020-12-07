@@ -28,7 +28,7 @@
 .nav-bar .hamburger-nav-box .nav-middle-bar, 
 .nav-bar .hamburger-nav-box .nav-bottom-bar
 {
-    width: 23px;
+    width: 25px;
     height: 2.5;
     padding: 0;
     margin: 2.5px;
@@ -95,8 +95,13 @@
     width: 50px;
 }
 
+/* --------------- sections --------------- */
+
 .ux-ui-section-container .ux-ui-section, 
-.ux-ui-section-container .website-section
+.ux-ui-section-container .website-section,
+.website-section-container .ux-ui-section, 
+.website-section-container .website-section,
+.nav-content-container .nav-content
 {
     max-width: 90vw;
     min-width: 90vw;

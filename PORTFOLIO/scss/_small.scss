@@ -17,7 +17,148 @@
 /* --------------- header --------------- */
 
 /* --------------- nav --------------- */
+.nav-bar .hamburger-nav-box .nav-top-bar, 
+.nav-bar .hamburger-nav-box .nav-middle-bar, 
+.nav-bar .hamburger-nav-box .nav-bottom-bar
+{
+    background-color: $mid-grey-color;
+    width: 27px;
+    height: 4;
+    padding: 0;
+    margin: 3px;
+}
 
 /* --------------- main --------------- */
+.hero-image .profile-box
+{
+    max-height: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.hero-image .profile-box .profile-picture-circle
+{
+    max-width: 55vw;
+    min-width: 55vw;
+    max-height: 55vw;
+    min-height: 55vw;
+    top: 20vh;
+}
+
+.hero-image .profile-box .profile-text h2
+{
+    font-size: 22px;
+    margin-top: 40vw;
+}
+
+.hero-image .profile-box .profile-text h3
+{
+    font-size: 16px;
+    letter-spacing: 5px;
+    line-height: 30px;
+}
+
+.hero-image .profile-box .box-white
+{
+    width: 75%;
+}
+
+.hero-image .profile-box .style-profile-line
+{
+    top: 30vh;
+}
+
+.hero-image .profile-box .profile-icon-box
+{
+    bottom: 15vh;
+}
+
+.hero-image .page-arrow-down
+{
+    bottom: 25px;
+}
+
+.hero-image .page-arrow-down #arrow-icon-size,
+.hero-image .page-arrow-down a #arrow-icon-size
+{
+    width: 50px;
+}
+
+/* --------------- sections --------------- */
+
+.ux-ui-section-container .ux-ui-section .head1-box h1, 
+.ux-ui-section-container .website-section .head1-box h1,
+.website-section-container .ux-ui-section .head1-box h1, 
+.website-section-container .website-section .head1-box h1
+{
+    font-size: 12vw;
+}
+
+.ux-ui-section-container .ux-ui-section .head1-box, 
+.ux-ui-section-container .website-section .head1-box,
+.website-section-container .ux-ui-section .head1-box, 
+.website-section-container .website-section .head1-box
+{
+    padding: 100px 0 50px 0;
+}
+
+.text-display
+{
+    margin: 0 !important;
+}
+
+.project-display
+{
+    padding-top: 70% !important;
+}
+
+.ux-ui-section-container .ux-ui-section .project-show-2, 
+.ux-ui-section-container .website-section .project-show-2,
+.ux-ui-section-container .ux-ui-section .project-show-4, 
+.ux-ui-section-container .website-section .project-show-4,
+.website-section-container .ux-ui-section .project-show-7, 
+.website-section-container .website-section .project-show-7,
+.website-section-container .ux-ui-section .project-show-5, 
+.website-section-container .website-section .project-show-5
+{
+    flex-direction: column-reverse;
+}
+
+.text-display
+{
+    padding-top: 60% !important;
+}
+
+.text-display-container
+{
+    padding: 6vw !important;
+}
+
+.text-title h2
+{
+    font-size: 6vw !important;
+}
+
+.text-details h3,
+.learn-more-title h3
+{
+    font-size: 4vw !important;
+}
+
+.learn-more-icon img
+{
+    height: 5vw !important;
+}
 
 /* --------------- footer --------------- */
+
+.footer-bar .copy-right-box h2
+{
+    font-size: 4vw;
+}
+
+.footer-bar .footer-icon-box .icon-size-adjust
+{
+    padding: 4vw;
+}
