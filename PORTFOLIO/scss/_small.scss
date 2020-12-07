@@ -27,6 +27,38 @@
     padding: 0;
     margin: 3px;
 }
+.nav-content-container .nav-content .profile-text
+{
+    margin-bottom: 10px;
+}
+.nav-content-container .nav-content .nav-links-section
+{
+    margin-top: 10px;
+}
+
+.nav-content-container .nav-content .nav-links-section .menu-section,
+.nav-content-container .nav-content .nav-links-section .portfolio-section
+{
+    margin: 10px 0;
+}
+.nav-content-container .nav-content .nav-links-section
+{
+    justify-content: flex-start;
+}
+
+.toggle .nav-top-bar
+{
+    transform: rotate(-45deg) translate(-7px,6px);
+}
+.toggle .nav-bottom-bar
+{
+    transform: rotate(45deg) translate(-7px,-6px);
+}
+
+.hero-image .profile-box
+{
+    border: none;
+}
 
 /* --------------- main --------------- */
 .hero-image .profile-box
