@@ -321,7 +321,36 @@ body
     {
         @include flex-col;
         width: $max-width;
-        height: auto;
+        height: 100%;
+        .hero-display
+        {
+            @include flex-row;
+//            width: 100%;
+//            padding-top: 50%;
+//            margin: 0;
+            width: 75vw; /* 75% of viewport vidth */
+            height: 48.27vw; /* 984/1529 * 75 */
+            max-height: 75vh; /* 75% of viewport vidth */
+            max-width: 116.5vh; /* 1529/984 * 75 */
+            margin: auto;
+            position: relative;
+            img
+            {
+                width: auto;
+                height: 100%;
+                padding: 0;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            #hero-tablet,
+            #hero-mobile
+            {
+                display: none;
+            }
+        }
         .canvas-project-title
         {
             @include flex-row;
@@ -423,6 +452,56 @@ body
             .project-display
             {
                 background-image: url(../images/clean-keyboards-preview.jpg);
+            }
+        }
+    }
+}
+
+.canvas-background
+{
+    background-color: $red-color;
+    .canvas-background
+    {
+        background-color: $red-color;
+        .project-show-1
+        {
+            @include project-background-mint;
+            .project-display
+            {
+                background-image: url(../images/canvas-project/canvas-display-1.jpg);
+            }
+        }
+        .project-show-2
+        {
+            @include project-background-blue;
+            .project-display
+            {
+                background-image: url(../images/canvas-project/sketches-desktop-mobile.jpg);
+            }
+        }
+        .project-show-3
+        {
+            @include project-background-mustard;
+            .project-display
+            {
+                background-image: url(../images/canvas-project/wireframes-desktop-mobile.jpg);
+            }
+        }
+        .project-show-4
+        {
+            @include project-background-grey;
+            .project-display
+            {
+                background-image: url(../images/canvas-project/grey-surface-comps.jpg);
+            }
+        }
+        .project-show-6
+        {
+            @include project-background-blue;
+            flex-direction: column-reverse;
+            .project-display
+            {
+                background-image: url(../images/canvas-project/final-submission.jpg);
             }
         }
     }
@@ -623,3 +702,5 @@ body
         background-attachment: fixed;
     }
 }
+
+

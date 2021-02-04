@@ -106,4 +106,29 @@
     max-width: 90vw;
     min-width: 90vw;
 }
+
+.hero-image-canvas-project .hero-container
+{
+    width: 100%;
+}
+
+.hero-image-canvas-project .hero-container .hero-display
+{
+    width: 95vw; /* 95% of viewport vidth */
+    height: 73.5vw; /* 911/1178 * 95 */
+    max-height: 80vh; /* 80% of viewport vidth */
+    max-width: 103.5vh; /* 1178/911 * 80 */
+    margin: auto;
+}
+
+.hero-image-canvas-project .hero-container .hero-display #hero-tablet
+{
+    display: block;
+}
+
+#hero-desktop,
+#hero-mobile
+{
+    display: none;
+}
 /* --------------- footer --------------- */
