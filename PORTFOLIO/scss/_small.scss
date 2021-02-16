@@ -27,9 +27,15 @@
     padding: 0;
     margin: 3px;
 }
+.nav-content-container .nav-content
+{
+    justify-content: center;
+    overflow: scroll;
+}
+
 .nav-content-container .nav-content .profile-text
 {
-    margin-bottom: 10px;
+    display: none;
 }
 .nav-content-container .nav-content .nav-links-section
 {
@@ -44,6 +50,10 @@
 .nav-content-container .nav-content .nav-links-section
 {
     justify-content: flex-start;
+    flex-direction: column;
+    align-content: flex-start;
+    width: 70%;
+    overflow: scroll;
 }
 
 .toggle .nav-top-bar
@@ -58,6 +68,22 @@
 .hero-image .profile-box
 {
     border: none;
+}
+
+.hero-image-canvas-project .hero-container .page-arrow-down a #arrow-icon-size,
+.hero-image-canvas-project .hero-container .page-arrow-down #arrow-icon-size
+{
+    width: 50px;
+}
+
+.hero-image-canvas-project .hero-container .page-arrow-down a #arrow-icon-size
+{
+    left: -25px;
+}
+
+.hero-image-canvas-project .hero-container .page-arrow-down
+{
+    bottom: 25px;
 }
 
 /* --------------- main --------------- */
@@ -124,7 +150,7 @@
 .website-section-container .ux-ui-section .head1-box h1, 
 .website-section-container .website-section .head1-box h1
 {
-    font-size: 12vw;
+    font-size: 10vw;
 }
 
 .ux-ui-section-container .ux-ui-section .head1-box, 
