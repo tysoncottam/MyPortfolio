@@ -209,6 +209,54 @@
     height: 5vw !important;
 }
 
+.canvas-background .canvas-background .project-show-final .project-final-title-area
+{
+    width: 100vw; /* 100% of viewport vidth */
+    height: 100vw; /* 1/4 * 100 */
+    max-height: 100vh; /* 100% of viewport vidth */
+    max-width: 100vh; /* 2/1 * 100 */
+    padding: 6vw;
+}
+
+.canvas-background .canvas-background .project-show-final .project-final-title-area .project-final-title
+{
+    height: 20%;
+}
+
+.canvas-background .canvas-background .project-show-final .project-final-title-area .project-final-title h2
+{
+    font-size: 6vw;
+}
+
+.canvas-background .canvas-background .project-show-final .project-final-title-area .project-final-title-description
+{
+    height: 80%;
+}
+
+
+.canvas-background .canvas-background .project-show-final .project-final-title-area .project-final-title-description h3
+{
+    font-size: 4vw;
+}
+
+.canvas-background .canvas-background .project-show-final .project-final-picture
+{
+    width: 100vw; /* 100% of viewport vidth */
+    height: 278.75vw; /* 1/4 * 100 */
+    min-height: 100vh; /* 100% of viewport vidth */
+    min-width: 35.87vh; /* 2/1 * 100 */
+}
+
+#final-submission-desktop-view
+{
+    display: none;
+}
+
+#final-submission-mobile-view
+{
+    display: block !important;
+}
+
 /* --------------- hero --------------- */
 
 .hero-image-canvas-project .hero-container .hero-display #hero-mobile
