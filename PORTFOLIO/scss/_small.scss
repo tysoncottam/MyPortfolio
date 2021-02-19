@@ -236,6 +236,15 @@
     padding: 6vw;
 }
 
+.about-me-background .about-me-background .project-show-final .project-final-title-area
+{
+    width: 100vw; /* 100% of viewport vidth */
+    height: 60vw; /* 1/2 * 100 */
+    max-height: 100vh; /* 100% of viewport vidth */
+    max-width: 166vh; /* 2/1 * 100 */
+    padding: 6vw;
+}
+
 .canvas-background .canvas-background .project-show-final .project-final-title-area .project-final-title,
 .uvu-background .uvu-background .project-show-final .project-final-title-area .project-final-title
 {
@@ -243,7 +252,8 @@
 }
 
 .canvas-background .canvas-background .project-show-final .project-final-title-area .project-final-title h2,
-.uvu-background .uvu-background .project-show-final .project-final-title-area .project-final-title h2
+.uvu-background .uvu-background .project-show-final .project-final-title-area .project-final-title h2,
+.about-me-background .about-me-background .project-show-final .project-final-title-area .project-final-title h2
 {
     font-size: 6vw;
 }
@@ -256,7 +266,8 @@
 
 
 .canvas-background .canvas-background .project-show-final .project-final-title-area .project-final-title-description h3,
-.uvu-background .uvu-background .project-show-final .project-final-title-area .project-final-title-description h3
+.uvu-background .uvu-background .project-show-final .project-final-title-area .project-final-title-description h3,
+.about-me-background .about-me-background .project-show-final .project-final-title-area .project-final-title-description h3
 {
     font-size: 4vw;
 }

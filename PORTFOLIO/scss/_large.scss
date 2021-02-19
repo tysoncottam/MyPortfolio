@@ -723,6 +723,89 @@ body
     }
 }
 
+.about-me-background
+{
+    background-color: $mustard-color;
+    .about-me-background
+    {
+        background-color: $mustard-color;
+        .project-show-final
+        {
+            @include flex-row;
+//            background-color: blue;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            @include box-shadow-default;
+            margin-top: 8vw;
+            margin-bottom: 8vw;
+            .project-final-title-area
+            {
+                @include flex-row;
+                background-color: $dark-blue-color;
+                width: 100vw; /* 100% of viewport vidth */
+                height: 14vw; /* 1/6 * 100 */
+                max-height: 100vh; /* 100% of viewport vidth */
+                max-width: 700vh; /* 2/1 * 100 */
+                padding: 3vw;
+                margin: auto;
+                opacity: 95%;
+                .project-final-title-description
+                {
+                    @include flex-row;
+//                    background-color: orange;
+                    height: 100%;
+                    width: 100%;
+                    h3
+                    {
+                        color: #fff;
+                        padding: 0;
+                        margin: 0;
+//                            font-size: 30px;
+                        font-size: 1.5vw;
+                        font-weight: 300;
+                    }
+                    .text-learn-more
+                    {
+                        @include learn-more-default;
+                    }
+                    .text-learn-more a:hover
+                    {
+                        background-color: $red-color;
+                    }
+                }
+            }
+            .project-final-picture
+            {
+                @include flex-row;
+//                background-color: aquamarine;
+                width: 100vw; /* 100% of viewport vidth */
+                height: 67vw; /* 10/15 * 100 */
+                max-height: 100vh; /* 100% of viewport vidth */
+                max-width: 150vh; /* 15/10 * 100 */
+                margin: auto;
+                border: 5px solid #DADADA;
+                background-color: #e1e1e1;
+                img
+                {
+                    width: 100%;
+                    height: auto;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
+        #first-pic
+        {
+            margin-bottom: 4vw;
+        }
+        #last-pic
+        {
+            margin-top: 0;
+        }
+    }
+}
 
 
 
