@@ -355,6 +355,75 @@ $max-width-project-brief: 1000px;
                 margin-right: -10vw;
             }
         }
+        .project-show-8
+        {
+            @include project-show-default;
+            .project-display
+            {
+                @include project-display-default;
+            }
+            .text-display
+            {
+                @include text-display-default;
+                margin-left: -10vw;
+            }
+        }
+    }
+}
+
+@mixin learn-more-default
+{
+    width: 100%;
+    @include flex-row;
+    justify-content: flex-end;
+    a
+    {
+        text-decoration: none;
+        transition: all 0.3s;
+        padding: 15px 0px;
+        border: 3px solid transparent;
+        .learn-more-div
+        {
+            @include flex-row;
+            width: 100%;
+            .learn-more-title
+            {
+                @include flex-row;
+                height: auto;
+                padding: 0;
+                margin: 0;
+                h3
+                {
+                    color: #fff;
+                    padding: 0;
+                    margin: 0;
+//                                        font-size: 30px;
+                    font-size: 1.5vw;
+                    font-weight: 300;
+                    padding: 0 10px 0 20px;
+                }
+            }
+            .learn-more-icon
+            {
+                @include flex-row;
+                height: auto;
+                padding: 0;
+                margin: 0;
+                img
+                {
+                    width: 100%;
+                    height: 2vw;
+                    width: auto;
+                    padding: 0 15px 0 5px;
+                }
+            }
+        }
+        &:hover
+        {
+            background-color: $dark-blue-color;
+            box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.25);
+            border: 3px solid #fff;
+        }
     }
 }
 
@@ -425,58 +494,7 @@ $max-width-project-brief: 1000px;
                     }
                     .text-learn-more
                     { 
-                        width: 100%;
-                        @include flex-row;
-                        justify-content: flex-end;
-                        a
-                        {
-                            text-decoration: none;
-                            transition: all 0.3s;
-                            padding: 15px 0px;
-                            border: 3px solid transparent;
-                            .learn-more-div
-                            {
-                                @include flex-row;
-                                width: 100%;
-                                .learn-more-title
-                                {
-                                    @include flex-row;
-                                    height: auto;
-                                    padding: 0;
-                                    margin: 0;
-                                    h3
-                                    {
-                                        color: #fff;
-                                        padding: 0;
-                                        margin: 0;
-//                                        font-size: 30px;
-                                        font-size: 1.5vw;
-                                        font-weight: 300;
-                                        padding: 0 10px 0 20px;
-                                    }
-                                }
-                                .learn-more-icon
-                                {
-                                    @include flex-row;
-                                    height: auto;
-                                    padding: 0;
-                                    margin: 0;
-                                    img
-                                    {
-                                        width: 100%;
-                                        height: 2vw;
-                                        width: auto;
-                                        padding: 0 15px 0 5px;
-                                    }
-                                }
-                            }
-                            &:hover
-                            {
-                                background-color: $dark-blue-color;
-                                box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.25);
-                                border: 3px solid #fff;
-                            }
-                        }
+                        @include learn-more-default;
                     }
                 }
             }
