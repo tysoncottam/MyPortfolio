@@ -124,7 +124,7 @@
 
 .hero-image .profile-box .style-profile-line
 {
-    top: 30vh;
+    display: none;
 }
 
 .hero-image .profile-box .profile-icon-box
@@ -151,6 +151,14 @@
 .website-section-container .website-section .head1-box h1
 {
     font-size: 10vw;
+    text-align: justify;
+    margin-right: -2vw;
+}
+
+.website-section-container .ux-ui-section .head1-box h1, 
+.website-section-container .website-section .head1-box h1
+{
+    margin-right: -5vw;
 }
 
 .ux-ui-section-container .ux-ui-section .head1-box, 
@@ -159,6 +167,7 @@
 .website-section-container .website-section .head1-box
 {
     padding: 100px 0 50px 0;
+    justify-content: center;
 }
 
 .text-display
