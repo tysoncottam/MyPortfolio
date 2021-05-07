@@ -1,7 +1,7 @@
 const navSlide = () => {
     const burger = document.querySelector('.hamburger-nav-box');
     const canvasClick = document.querySelector('.canvas-click');
-    const goreactClick = document.querySelector('.goreact-click');
+    const appleClick = document.querySelector('.apple-click');
     const uxuiClick = document.querySelector('.uxui-click');
     const websitesClick = document.querySelector('.websites-click');
     
@@ -47,7 +47,7 @@ const navSlide = () => {
         burger.classList.toggle('toggle');
     });
     
-    goreactClick.addEventListener('click',() => {
+    appleClick.addEventListener('click',() => {
         nav.classList.toggle('nav-content-container-active');
         if (navLinks1.style.animation && navLinks2.style.animation && navLinks3.style.animation)
             {

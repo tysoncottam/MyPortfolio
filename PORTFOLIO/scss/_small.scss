@@ -227,7 +227,8 @@
     padding: 6vw;
 }
 
-.uvu-background .uvu-background .project-show-final .project-final-title-area
+.uvu-background .uvu-background .project-show-final .project-final-title-area,
+.apple-background .apple-background .project-show-final .project-final-title-area
 {
     width: 100vw; /* 100% of viewport vidth */
     height: 120vw; /* 1/4 * 100 */
@@ -246,20 +247,23 @@
 }
 
 .canvas-background .canvas-background .project-show-final .project-final-title-area .project-final-title,
-.uvu-background .uvu-background .project-show-final .project-final-title-area .project-final-title
+.uvu-background .uvu-background .project-show-final .project-final-title-area .project-final-title,
+.apple-background .apple-background .project-show-final .project-final-title-area .project-final-title
 {
     height: 20%;
 }
 
 .canvas-background .canvas-background .project-show-final .project-final-title-area .project-final-title h2,
 .uvu-background .uvu-background .project-show-final .project-final-title-area .project-final-title h2,
+.apple-background .apple-background .project-show-final .project-final-title-area .project-final-title h2,
 .about-me-background .about-me-background .project-show-final .project-final-title-area .project-final-title h2
 {
     font-size: 6vw;
 }
 
 .canvas-background .canvas-background .project-show-final .project-final-title-area .project-final-title-description,
-.uvu-background .uvu-background .project-show-final .project-final-title-area .project-final-title-description
+.uvu-background .uvu-background .project-show-final .project-final-title-area .project-final-title-description,
+.apple-background .apple-background .project-show-final .project-final-title-area .project-final-title-description
 {
     height: 80%;
 }
@@ -267,13 +271,15 @@
 
 .canvas-background .canvas-background .project-show-final .project-final-title-area .project-final-title-description h3,
 .uvu-background .uvu-background .project-show-final .project-final-title-area .project-final-title-description h3,
+.apple-background .apple-background .project-show-final .project-final-title-area .project-final-title-description h3,
 .about-me-background .about-me-background .project-show-final .project-final-title-area .project-final-title-description h3
 {
     font-size: 4vw;
 }
 
 .canvas-background .canvas-background .project-show-final .project-final-picture,
-.uvu-background .uvu-background .project-show-final .project-final-picture
+.uvu-background .uvu-background .project-show-final .project-final-picture,
+.apple-background .apple-background .project-show-final .project-final-picture
 {
     width: 100vw; /* 100% of viewport vidth */
     height: 278.75vw; /* 1/4 * 100 */
